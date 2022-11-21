@@ -123,7 +123,7 @@ body {
 }
 .bg-header.bg1 {
   display: auto;
-  background-image: url(/images/BG.png);
+  background-image: url(../../images/BG.png);
   height: max-content;
   min-height: 85vh;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body {
 }
 .bg-header.bg2 {
   display: auto;
-  background-image: url(/images/bg2.png);
+  background-image: url(../../images/bg2.png);
   height: max-content;
   min-height: 85vh;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body {
 }
 .bg-header.bg3 {
   display: auto;
-  background-image: url(/images/bg3.png);
+  background-image: url(../../images/bg3.png);
   height: max-content;
   min-height: 85vh;
   background-repeat: no-repeat;

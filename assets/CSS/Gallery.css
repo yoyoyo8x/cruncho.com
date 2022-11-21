@@ -114,7 +114,7 @@
   max-width: 1180px;
   margin: auto;
   width: 100%;
-  background-image: url("/images/gallery-img/welcome.png");
+  background-image: url("../../images/gallery-img/welcome.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
