@@ -16,7 +16,7 @@
 
 .menubar-pc a:nth-child(4),
 .menubar-mobile a:nth-child(5) {
-  color: #389eae;
+  color: #f84747;
 }
 
 @keyframes showing {
