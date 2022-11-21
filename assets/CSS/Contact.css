@@ -1,0 +1,164 @@
+/* --------BASE-------- */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --body: #7f7d8e;
+  --bgbody: #fff;
+  --bgheader: #25292d;
+  --text: #fff;
+  --textbutton: #333333;
+  --content-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--bgbody);
+}
+
+.menubar-pc a:last-child,
+.menubar-mobile a:last-child {
+  color:#389eae;
+}
+
+/* --------CONTACT-------- */
+.contact-container {
+  color: black;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact-container p {
+  font-size: 17px;
+  font-family: "Open Sans", Sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #7b7e81;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 930px;
+  padding: 10px;
+  margin: auto;
+}
+
+.contact-title {
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.contact-content > p {
+  margin-bottom: 17px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: var(--content-width);
+  margin: auto;
+  margin-bottom: 70px;
+  object-fit: cover;
+}
+
+#telephone {
+  height: 29px;
+}
+
+.info-item {
+  padding: 10px;
+}
+
+.info-item > h3 {
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.info-item > a {
+  color: #212428;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  font-size: 17px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--content-width);
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.submit-info {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ebeced;
+  padding: 16px 18px;
+}
+
+.contact-form textarea {
+  height: 194px;
+  min-height: 194px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 1px 1px 3px #7f7d8e;
+}
+
+.submit-box {
+  flex: 2;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Rubik", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  padding: 17px 52px;
+  margin: 22px 0px 0px 58px;
+  cursor: pointer;
+}

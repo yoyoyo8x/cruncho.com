@@ -1,0 +1,140 @@
+/* --------BASE-------- */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+:root {
+  --body: #7f7d8e;
+  --bgbody: #fff;
+  --bgheader: #25292d;
+  --text: #fff;
+  --textbutton: #333333;
+  --content-width: 1200px;
+}
+
+.menubar-pc a:nth-child(4),
+.menubar-mobile a:nth-child(5) {
+  color: #389eae;
+}
+
+@keyframes showing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.item.show {
+  animation: 350ms showing linear;
+}
+
+.item.hide{
+  display: none;
+}
+
+/* --------GALLERY-------- */
+.gallery-container {
+  color: black;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.title {
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.gallery-filter {
+  max-width: 1221px;
+  margin: auto;
+  height: auto;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 25px 0;
+}
+
+.filter button {
+  border: none;
+  font-family: Rubik;
+  font-size: 15px;
+  color: #7b7e81;
+  text-transform: uppercase;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter button:hover {
+  color: #000;
+}
+
+.btn.active{
+  color:#000;
+}
+
+.filter-items {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.filter-items img {
+  width: 350px;
+  height: 350px;
+}
+
+.gallery-content {
+  max-width: 930px;
+  text-align: center;
+  margin: auto;
+}
+
+.gallery-content p {
+  color: #7b7e81;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.banner-container {
+  max-width: 1180px;
+  margin: auto;
+  width: 100%;
+  background-image: url("/images/gallery-img/welcome.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 73px 16px 93px 0px;
+}
+
+.banner-content {
+  color: #fff;
+  font-family: "Kaushan Script", Sans-serif;
+  font-size: 96px;
+  line-height: 73px;
+  margin-bottom:35px;
+}
+
+.banner-year {
+scale:0.9;
+}
+
+.item:hover{
+  filter: brightness(50%);
+  transition: all 1s;
+}

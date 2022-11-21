@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/CSS/About.css" />
+    <link rel="stylesheet" href="./assets/CSS/rsabout.css">
+    <title>About</title>
+
+  </head>
+  <body>
+
+    <!-- ! NAV BAR -->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./Project.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a class="item" href="./Project.html"><span>Home</span></a>
+          <a class="item" href="./About.html"><span>About</span></a>
+          <a class="item" href="./Menu.html"><span>Menu</span></a>
+          <a class="item" href="./Gallery.html"><span>Gallery</span></a>
+          <a class="item" href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a class="item" href="./Project.html">Home</a>
+        <a class="item" href="./About.html">About</a>
+        <a class="item" href="./Menu.html">Menu</a>
+        <a class="item" href="./Gallery.html">Gallery</a>
+        <a class="item" href="./Contact.html">Contact</a>
+      </nav>
+    </section>
+    
+
+<!-- ! CONTENT -->
+
+
+    <div id="page" class="site">
+      <div id="content" class="site-content">
+        <div class="elementor elementor-136">
+          <div class="elementor-inner">
+            <div class="elementor-section-wrap">
+              <section class="section-whoweare">
+                <div class="whoweare">
+                  <span> Who We Are </span>
+                </div>
+              </section>
+              <section class="container">
+                <div class="elementor-container">
+                  <div class="content">
+                    <img src="./images/about-1.png" alt="" />
+                  </div>
+                  <div class="content1">
+                    <h2 class="elementor-heading-title">
+                      a few words about us
+                    </h2>
+                    <p class="elementor-text-editor">
+                      When visiting our European restaurant, just brace yourself
+                      to immersing into enjoying a truly delicious and perfectly
+                      cooked dishes.
+                    </p> <br> <br>
+                    <p class="elementor-text-editor">
+                      The world-renowned chef showcases exhilarating
+                      interpretations of European food in a breathtaking space
+                      architect Tadao Ando built as a respite from the non-stop
+                      chaos of New York City.
+                    </p>
+                    <br />
+                    <br />
+                    <h2 class="elementor-heading-title">Why Choose Us</h2>
+                    <p class="elementor-text-editor">
+                      We welcome every person to visit our restaurant! Everyone
+                      can find its perfect table and try incredible dish from
+                      our chef! We work for people to deliver great mood, create
+                      cozy atmosphere and make your time awesome and fun!
+                      Delivering the best service is our core value, as people
+                      come to us to have a rest, and we’re providing their
+                      perfect residence.
+                    </p>
+                    <img src="./images/signature.png" alt="" />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ! Animation Number -->
+
+
+        <div class="fact-container">
+            <div class="fact-heading"><p>Our Fun Facts</p></div>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <img src="./images/factitem1.svg" alt="">
+                    <div class="fact-content">
+                        <p class="fact-number" id="happyclient-count">5437</p>
+                        <p class="fact-title">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <img src="./images/factitem2.svg" alt="">
+                    <div class="fact-content">
+                        <p class="fact-number" id="amazingdish-count">1230</p>
+                        <p class="fact-title">Amazing Dishes</p>
+                    </div>
+
+                </div>
+                <div class="fact-item">
+                    <img src="./images/factitem3.svg" alt="">
+                    <div class="fact-content">
+                        <p class="fact-number" id="satisfiedstaff-count">251</p>
+                        <p class="fact-title">Satisfied Staff</p>
+                    </div>
+
+                </div>
+                <div class="fact-item">
+                    <img src="./images/factitem4.svg" alt="">
+                    <div class="fact-content">
+                        <p class="fact-number" id="workhour-count">9437</p>
+                        <p class="fact-title">Work Hours</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+       
+       
+       <!-- Team img -->
+        <div class="team-information">
+          <div class="information-heading"> Meet Our Team</div>
+          <div class="information-list">
+            <div class="information-item">
+              <img src="./images/team-1.webp" alt="">
+              <div class="information-person">
+                <p class="information-name">Dayle Peters</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-2.webp" alt="">
+              <div class="information-person">
+                <p class="information-name">John Franklin</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-3.webp" alt="">
+              <div class="information-person">
+                <p class="information-name">Eva Savits</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-4.webp" alt="">
+              <div class="information-person">
+                <p class="information-name">Michael Freeman</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- !Art 12 years -->
+        
+        <div class="art-container-cover">
+      
+          <div class="art-slogan">
+            <h2> We are proud <br>
+              to serving for you</h2>
+          </div>
+          <div class="art-12year">
+            <img src="./images/12years.png" alt="">
+          </div>
+        </div>
+        
+        
+        
+        
+        <section class="feedback-container">
+          <div class="feedbacks">
+            <h2 class="h2">
+              <span class="whatppsay"> What People Say About Us </span>
+            </h2>
+
+            <!-- slideshow2 -->
+            <div class="slideshow2">
+              <!-- per1 -->
+              <div class="sl_show per">
+                  <img src="images/PPsayaboutus1.png" alt="">
+                  <p>I loved your cuisine, ambience and service! A combination of al these elements is perfect here. I visited the restaurant with my friends and I was amazed by its interior and rich menu! Thanks for your great job!
+                      Nulla tincidunt euismod justo, non laoreet tellus maximus dapibus.</p>
+                  <span class="Name">Mary Scott</span>
+                  <span class="Post">Founder</span>
+              </div>
+              <!-- per2 -->
+              <div class="sl_show per">
+                  <img src="./images/PPsayaboutus2.png" alt="">
+                  <p>Totally stunning atmosphere and friendly personnel! I’m amazed with your menu positions and meals taste! Thank you for your professional attitude to your work and for your attention to details! Perfect restaurant! Me and my family will definitely visit your again.</p>
+                  <span class="Name">Debby Girr</span>
+                  <span class="Post">Founder</span>
+              </div>
+              <!-- per3 -->
+              <div class="sl_show per">
+                  <img src="./images/PPsayaboutus3.png" alt="">
+                  <p>I’m new in the city and I was recommended to visit Artichaut by my friends. I’m very grateful for this recommendation! Great cuisine, fast service and extremely stylish interior - that’s all I love in restaurants! I appreciated your serving and your professional staff.</p>
+                  <span class="Name">Thomas Taker</span>
+                  <span class="Post">Founder</span>
+              </div>
+              <div class="khungdot">
+                  <span class="dot" onclick="Change(1)"></span> 
+                  <span class="dot" onclick="Change(2)"></span> 
+                  <span class="dot" onclick="Change(3)"></span> 
+                </div>
+            </div>  
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+
+  <!-- ! FOOTER -->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+            89GR.
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/about.js"></script>
+  <!-- <script src="./assets/JS/base.js"></script> -->
+</html>
+
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/base.css" />
+    <link rel="stylesheet" href="./assets/CSS/Contact.css" />
+    <link rel="stylesheet" href="./assets/CSS/contact-responsive.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!---------NAVBAR---------->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./Project.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a class="item" href="./Project.html"><span>Home</span></a>
+          <a class="item" href="./About.html"><span>About</span></a>
+          <a class="item" href="./Menu.html"><span>Menu</span></a>
+          <a class="item" href="./Gallery.html"><span>Gallery</span></a>
+          <a class="item" href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a class="item" href="./Project.html">Home</a>
+        <a class="item" href="./About.html">About</a>
+        <a class="item" href="./Menu.html">Menu</a>
+        <a class="item" href="./Gallery.html">Gallery</a>
+        <a class="item" href="./Contact.html">Contact</a>
+      </nav>
+    </section>
+    <!---------CONTACT---------->
+    <div class="contact-container">
+      <div class="contact-content">
+        <h3 class="contact-title">Contact Us</h3>
+        <p>
+          We are open to your feedback and your opinion about our restaurant. If
+          you have any questions, suggestions or commercial offers, please feel
+          free to contact us any suitable way. Every guest can book a table or
+          ask any question – our representatives will reply and provide you will
+          all necessary information.
+        </p>
+        <p>
+          We are looking forward hearing from you and seeing you as our guests!
+        </p>
+      </div>
+      <div class="contact-info">
+        <div class="info-item">
+          <img
+            src="./images/contact-img/car-img.svg"
+            alt="parking"
+            class="contact-img"
+          />
+          <h3>Parking</h3>
+          <p>
+            We have a comfortable parking, so you can leave your car and enjoy
+            your meals without any worries!
+          </p>
+        </div>
+        <div class="info-item">
+          <img
+            src="./images/contact-img/phone-img.svg"
+            alt="parking"
+            class="contact-img"
+            id="telephone"
+          />
+          <h3>Telephone</h3>
+          <p>
+            We are happy to answer your questions or give you directions via
+            phone.
+          </p>
+          <a href="callto:+1 800 889 9898">+1 800 889 9898 </a>
+        </div>
+        <div class="info-item">
+          <img
+            src="./images/contact-img/mail-img.svg"
+            alt="parking"
+            class="contact-img"
+          />
+          <h3>Email</h3>
+          <p>
+            If you are on the go and still want to ask a question, simply drop
+            us an e-mail.
+          </p>
+          <a href="mailto:mail@demolink.org">mail@demolink.org </a>
+        </div>
+      </div>
+      <div id="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.6782450402557!2d-0.12259411870452208!3d51.503325931907455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2s!4v1668250417424!5m2!1sen!2s"
+          width="100%"
+          height="400px"
+          style="border: 0; margin-bottom: 20px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact-title">Contact Form</div>
+      <form class="contact-form">
+        <div class="submit-info">
+          <input required type="text" placeholder="First Name*" />
+          <input required type="text" placeholder="Last Name*" />
+          <input
+            required
+            type="email"
+            placeholder="Email Address*"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+        <div class="submit-box">
+          <textarea
+            placeholder="Your Message"
+            class="submit-message"
+          ></textarea>
+          <button type="submit" class="btn" id="btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <!---------FOOTER---------->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+            89GR.
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/base.js"></script>
+  <script src="./assets/JS/contact.js"></script>
+</html>

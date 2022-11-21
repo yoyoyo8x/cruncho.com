@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/Panel.css">
+    <link rel="stylesheet" href="./assets/CSS/responsive.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <section class="header-container">
+            <div id="header-container-container-mobile">
+            <div class="header-container-flex-mobile">
+                <div class="Logo-mobile">
+                    <img src="./images/slide-logo.png" alt="">
+                </div>
+                    <div class="menubar1">
+                        <button id="btn_open1" onclick="openPanel()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    </div>
+            </div>
+            </div>
+            <div id="header-container-container-desktop">
+            <div class="header-container-flex-desktop">
+                <div class="Logo-desktop">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="menubar" >
+                    <button id="btn_open" onclick="openPanel()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="slideshow">
+                <!-- slide0 -->
+                <div class="bg-header fade bg1">
+                    <!-- <img src="./images/BG.png" alt=""> -->
+                <ul class="menu-container">
+                    <h5>Fresh Restaurant</h5>
+                    <p>Sauce "Pesto" comes from Italy. Traditionally prepared from basil, but you can cook with the addition of parsley or dill. "Pesto" goes well with pasta products, suitable for dressing salads, meat and fish dishes.</p>
+                <div class="btn_menu">
+                    <a id="viewmenu" href="./Menu.html" target="_blank">VIEW OUR MENU</a>
+                </div>     
+                </ul>
+                </div>
+                <!-- slide1 -->
+                <div class="bg-header fade bg2">
+                    <!-- <img src="./images/bg2.png" alt=""> -->
+                <ul class="menu-container">
+                    <h5>Traditional Food</h5>
+                    <p>Sauce "Pesto" comes from Italy. Traditionally prepared from basil, but you can cook with the addition of parsley or dill. "Pesto" goes well with pasta products, suitable for dressing salads, meat and fish dishes.</p>
+                <div class="btn_menu">
+                    <a id="viewmenu" href="./Menu.html" target="_blank">VIEW OUR MENU</a>
+                </div>     
+                </ul>
+                </div>
+                <!-- slide2 -->
+                <div class="bg-header fade bg3">
+                    <!-- <img src="./images/bg3.png" alt=""> -->
+                <ul class="menu-container">
+                    <h5>Authenic Dishes</h5>
+                    <p>Sauce "Pesto" comes from Italy. Traditionally prepared from basil, but you can cook with the addition of parsley or dill. "Pesto" goes well with pasta products, suitable for dressing salads, meat and fish dishes.</p>
+                <div class="btn_menu">
+                    <a id="viewmenu" href="./Menu.html" target="_blank">VIEW OUR MENU</a>
+                </div>     
+                </ul>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>   
+            <div id="Containerpanel" class="show"> 
+                <div id="Khungpanel">
+                    <div class="Headerpanel">
+                        <a class="containeritem" href="./Project.html" target="_blank"><span class="item">Home</span></a>
+                        <a class="containeritem" href="./About.html" target="_blank"><span class="item">About</span></a>
+                        <a class="containeritem" href="./Menu.html" target="_blank"><span class="item">Menu</span></a>
+                        <a class="containeritem" href="./Gallery.html" target="_blank"><span class="item">Gallery</span></a>
+                        <a class="containeritem" href="./Contact.html" target="_blank"><span class="item">Contact</span></a>
+                    </div>
+                </div>
+                    <button id="btn_close" onclick="closePanel()">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        </header>
+    <main>
+
+        <!-- Welcome -->
+        <section class="Welcome">
+            <h3 class="Welcom_tittle">TASTY AND CRUNCHY</h3>
+            <h2 class="Welcom_tittle2">Welcome To Come&Eat</h2>
+            <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!  Here you will dive into a friendly and romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from all over the world you can feel yourself as a traveler and true gourmet!</p>
+        </section>
+
+        <!-- Menu -->
+        <section class="Menu box-responsive">
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template2.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template3.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template4.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template5.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div class="Price"><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template6.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template7.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template8.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book A table -->
+        <Section class="Book_A_Table">
+            <div class="Bg_Book">
+                <div class="Menu_Book">
+                    <div class="tittle">
+                        <h2>TASTY AND CHUNKY</h2>
+                    </div>
+                    <span class="title2">Book A Table</span>
+                    <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!</p>
+                    <div class="btn_menu">
+                        <a id="viewmenu" href="./Menu.html" target="_blank">LOOK OUR MENU</a>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <!-- Our Main Meals -->
+        <section class="Welcome">
+            <h3 class="Welcom_tittle">TASTY AND CRUNCHY</h3>
+            <h2 class="Welcom_tittle2">Our Main Meals</h2>
+            <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!  Here you will dive into a friendly and romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from all over the world you can feel yourself as a traveler and true gourmet!</p>
+        </section>
+        
+
+        <!-- Menu -->
+        <section class="Menu box-responsive">
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template2.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template3.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template4.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template5.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div class="Price"><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template6.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template7.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template8.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What people say -->
+        <Section class="Peoplesay">
+            <div class="Bg_Peoplesay">
+                <div class="Container_say">
+                    <div class="tittle">
+                        <h2>TASTY AND CHUNKY</h2>
+                    </div>
+                    <span class="title2">What People Say</span>
+                    <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!  Here you will dive into a friendly and romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from all over the world you can feel yourself as a traveler and true gourmet!</p>
+                </div>
+                
+                <!-- slideshow2 -->
+                <div class="slideshow2">
+                    <!-- per1 -->
+                    <div class="sl_show per">
+                        <img src="./images/per1.png" alt="">
+                        <p>I loved your cuisine, ambience and service! A combination of al these elements is perfect here. I visited the restaurant with my friends and I was amazed by its interior and rich menu! Thanks for your great job!
+                            Nulla tincidunt euismod justo, non laoreet tellus maximus dapibus.</p>
+                        <span class="Name">Mary Scott</span>
+                        <span class="Post">Founder</span>
+                    </div>
+                    <!-- per2 -->
+                    <div class="sl_show per">
+                        <img src="./images/per2.png" alt="">
+                        <p>Totally stunning atmosphere and friendly personnel! I’m amazed with your menu positions and meals taste! Thank you for your professional attitude to your work and for your attention to details! Perfect restaurant! Me and my family will definitely visit your again.</p>
+                        <span class="Name">Debby Girr</span>
+                        <span class="Post">Founder</span>
+                    </div>
+                    <!-- per3 -->
+                    <div class="sl_show per">
+                        <img src="./images/per3.png" alt="">
+                        <p>I’m new in the city and I was recommended to visit Artichaut by my friends. I’m very grateful for this recommendation! Great cuisine, fast service and extremely stylish interior - that’s all I love in restaurants! I appreciated your serving and your professional staff.</p>
+                        <span class="Name">Thomas Taker</span>
+                        <span class="Post">Founder</span>
+                    </div>
+                    <div class="khungdot">
+                        <span class="dot" onclick="Change(1)"></span> 
+                        <span class="dot" onclick="Change(2)"></span> 
+                        <span class="dot" onclick="Change(3)"></span> 
+                      </div>
+                </div>  
+
+            </div>
+        </section>
+
+        <!-- Our Desserts -->
+        <section class="Welcome">
+            <h3 class="Welcom_tittle">TASTY AND CRUNCHY</h3>
+            <h2 class="Welcom_tittle2">Our Desserts</h2>
+            <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!  Here you will dive into a friendly and romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from all over the world you can feel yourself as a traveler and true gourmet!</p>
+        </section>
+        
+
+        <!-- Menu -->
+        <section class="Menu box-responsive">
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template2.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div >
+                            <img src="./images/template3.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template4.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu_colum box-item">
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template5.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5></div>
+                                <div class="Price"><h5>$15.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template6.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED FREE RANGE CHICKEN SALAD</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template7.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GARLIC SHRIMP & TONNARELLI PASTA</h5></div>
+                                <div><h5>$19.99</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container_template">
+                    <div>
+                            <img src="./images/template8.png" alt="">
+                    </div>
+                    <div>
+                        <div class="Container_price">
+                                <div><h5>GRILLED HANGER STEAK</h5></div>
+                                <div><h5>$25.50</h5></div>
+                        </div>
+                            <div><p>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Map -->
+        </div>
+        <div id="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.6782450402557!2d-0.12259411870452208!3d51.503325931907455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2s!4v1668250417424!5m2!1sen!2s"
+                 width="100%"
+                 height="400px"
+                style="border: 0; margin-bottom: -6px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+
+    </main>
+    
+    
+    <!---------FOOTER---------->
+    <section class="footer-container">
+        <div class="footer-content">
+          <div class="footer-item">
+            <div class="footer-title">Address</div>
+            <div class="footer-item-content">
+              The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+              89GR.
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-title">Follow us</div>
+            <div class="footer-item-content" id="icon-box">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="https://www.google.com" target="_blank"
+                ><i class="fa fa-google-plus"></i
+              ></a>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="https://www.pinterest.com" target="_blank"
+                ><i class="fa fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-title">Contact us</div>
+            <div class="footer-item-content">
+              <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+              <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+              <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyright">
+        <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+      </div>
+      <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </button>    
+    </body>
+    <div id="loading">
+        <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+      </div>
+      <script src="./assets/JS/base.js"></script>
+    <script src="./assets/JS/main.js"></script>
+</html>

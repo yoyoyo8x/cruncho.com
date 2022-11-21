@@ -1,0 +1,153 @@
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+    /* NAVBAR */
+    #header-container-container-desktop{
+        display: none;}
+    body{
+        padding: 5px 10px 10px 10px;
+    }    
+    .Welcome{
+    padding: 35px 0px 35px 0px;
+    }
+    .box-responsive{
+        flex-direction: column;
+    }
+    .boxitem{
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+    .slideshow .menu-container{
+        top: 11%;
+    }
+    .Menu {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .Menu_colum{
+        padding: 0px 10px 0px 10px;
+    }
+    .Container_template img{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .Container_price h5{
+        margin: 0;
+    }
+    .Bg_Peoplesay{
+        max-width: 930px;
+        width: auto;
+    }
+    .slideshow2 p {
+        width: auto;
+    }
+    .Container_say{
+        padding: 0;
+    }
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    #header-container-container-mobile{
+        display: none;}
+    body{
+        width: 894px;
+    }
+    .slideshow .menu-container{
+        top: 30%;
+    }
+    .slideshow .btn_menu{
+        margin: 75px 0px 94px 0px;
+    }
+    .Welcome h2{
+        margin: 0 0 40px 0;
+        font-size: 55px;
+    }
+    .Welcome p{
+        font-size: 22px;
+    }
+    .Menu {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .Menu_colum{
+        padding: 0px 10px 0px 10px;
+    }
+    .Container_template img{
+        width: 100px;
+        margin-right: 10px;
+    }
+    .Container_price h5{
+        margin: 0;
+        font-size: 17px;
+    }
+    .Container_template p{
+        margin-top: 15px;;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .tittle h2{
+        font-size: 18px;
+    }
+    .tittle2{
+    font-size: 50px;
+    }
+    .Menu_Book p{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 20px 0px 20px;
+        font-size: 22px;
+    }
+    
+}
+/* Tablet: > 1024px */
+@media only screen and (min-width: 1024px){
+    #header-container-container-mobile{
+        display: none;
+}}
+
+
+/* slideshow */
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  /* .Book_A_Table */
+  .Book_A_Table{
+    background-image:url(https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/01/home-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 50px 0px 50px 0px;
+    background-color: #33333399;
+    background-blend-mode: multiply;
+
+}
+@media screen and (min-width: 1025px){
+    .Book_A_Table{background-attachment: fixed;}
+}
+
+@keyframes per {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* .People_Say */
+.Peoplesay{
+    background-image:url(https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/01/home-img-7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 50px 0px 50px 0px;
+    background-color: #33333399;
+    background-blend-mode: multiply;
+
+}
+@media screen and (min-width: 1025px){
+    .Peoplesay{background-attachment: fixed;}
+}
+

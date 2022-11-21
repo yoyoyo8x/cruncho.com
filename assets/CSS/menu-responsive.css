@@ -1,0 +1,97 @@
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  /* --------NAVBAR-------- */
+  #btn-open {
+    display: block;
+    margin-right: 30px;
+  }
+  .header-container-flex-desktop .menubar-pc {
+    display: none;
+  }
+
+  .header-container-flex-desktop .Logo-desktop {
+    padding: 0;
+  }
+
+  .header-container {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .Bar_Menu{
+    flex-wrap: wrap;
+  }
+  .Row_Infor_Menu{
+    flex-direction: column;
+  }
+  .Row_Infor_Menu .Containerfood {
+    width: 100%;
+  }
+  .Menu_Description {
+    padding: 0;
+  }
+  .Menu_Description1 {
+    padding: 0;
+  }
+  .elementor_Menu_Description {
+    flex-direction: column;
+  }
+  .elementor_Menu_Description1 {
+    flex-direction: column;
+  }
+  .col2_Menu_Description .list_item {
+    padding: 0;
+  }
+  .col1_Menu_Description .list_item {
+    padding: 0;
+  }
+  .item{
+    padding-bottom: 15px;
+  }
+  .container_item p{
+    font-size: 12px;
+  }
+
+  /* --------FOOTER-------- */
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  /* --------NAVBAR-------- */
+  #btn-open {
+    display: block;
+    margin-right: 30px;
+  }
+  .header-container-flex-desktop .menubar-pc {
+    display: none;
+  }
+  .header-container {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .Row_Infor_Menu {
+    flex-wrap: wrap;
+  }
+  .Row_Infor_Menu .Containerfood {
+    width: 50%;
+  }
+  .Menu_Description {
+    padding: 0;
+  }
+  .col1_Menu_Description{
+    padding: 10px 10px 10px 10px;
+  }
+  .col2_Menu_Description .list_item {
+    padding: 0;
+  }
+}
+
+/* PC: width >= 1040px */

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/base.css" />
+    <link rel="stylesheet" href="./assets/CSS/Gallery.css" />
+    <link rel="stylesheet" href="./assets/CSS/gallery-responsive.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!---------NAVBAR---------->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./Project.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a href="./Project.html"><span>Home</span></a>
+          <a href="./About.html"><span>About</span></a>
+          <a href="./Menu.html"><span>Menu</span></a>
+          <a href="./Gallery.html"><span>Gallery</span></a>
+          <a href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a href="./Project.html">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./Menu.html">Menu</a>
+        <a href="./Gallery.html">Gallery</a>
+        <a href="./Contact.html">Contact</a>
+      </nav>
+    </section>
+    <!---------GALLERY---------->
+    <div class="gallery-container">
+      <div class="title">Our Gallery</div>
+      <div class="gallery-filter">
+        <div class="filter">
+          <!-- <button class="btn" data-filter="all" style="display:none">
+            all
+          </button> -->
+          <button class="btn active" data-filter="appetizers" id="appe">
+            Appetizers
+          </button>
+          <button class="btn" data-filter="dessert">Dessert</button>
+          <button class="btn" data-filter="drink">drinks</button>
+          <button class="btn" data-filter="mainDish">Main dishes</button>
+          <button class="btn" data-filter="paniniPasta">Panini pasta</button>
+          <button class="btn" data-filter="risotto">Risotto</button>
+          <button class="btn" data-filter="salads">Salads</button>
+          <button class="btn" data-filter="saucesSoups">Sauces soups</button>
+        </div>
+        <div class="filter-items">
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe1.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe2.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe3.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe4.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe5.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe6.jpg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe7.jpeg" alt="" />
+          </div>
+          <div class="item appetizers">
+            <img src="./images/gallery-img/appe8.jpg" alt="" />
+          </div>
+          <div class="item mainDish">
+            <img src="./images/gallery-img/appe9.webp" alt="" />
+          </div>
+          <div class="item appetizers dessert">
+            <img src="./images/gallery-img/dess1.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess2.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess3.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess4.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess5.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess6.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess7.jpeg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess8.jpg" alt="" />
+          </div>
+          <div class="item dessert">
+            <img src="./images/gallery-img/dess9.avif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="gallery-content">
+        <h2 class="title">Welcome To Come&Eat</h2>
+        <p>
+          We welcome you to a delicious feast of exquisite dishes in Artichaut.
+          With a wide range of world cuisines to choose from, we guarantee you a
+          sumptuous feast experience in our restaurant! Here you will dive into
+          a friendly and romantic atmosphere and enjoy our haute cuisine. With
+          our great selection of dishes from all over the world you can feel
+          yourself as a traveller and true gourmet!
+        </p>
+      </div>
+      <div class="banner-container">
+        <!-- <div class="back-img">
+          <img src="./images/gallery-img/welcome.png" alt="" />
+        </div> -->
+
+        <div class="banner-content">
+          We are proud <br />
+          to serving for you
+        </div>
+        <div class="banner-year">
+          <img src="./images/gallery-img/12y.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!---------FOOTER---------->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+            89GR.
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/gallery.js"></script>
+  <script src="./assets/JS/base.js"></script>
+</html>
