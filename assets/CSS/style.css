@@ -577,33 +577,3 @@ body {
   z-index: 100;
 }
 
-/* @keyframes blur {
-    to {
-      opacity: o;
-      filter: blur(15px);
-    }
-    from {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
-  
-  .blur{
-    animation: blur 300ms ease-out;
-  } */
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-body {
-  position: relative;
-  animation: animatebottom 1300ms linear;
-}
