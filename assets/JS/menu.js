@@ -47,7 +47,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Blueberry and nut brownies, vanilla ice cream, fresh berry',
  },   
  {
-     pic: './images/Menu-img/DRINK.png',
+     pic: './images/Menu-img/Dri.png',
      name: 'KETO DRINK MIX',
      cate: 'DRINK',
      link: '#',
@@ -95,7 +95,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe: 'Egg noodles, mushrooms, garlic cloves finely chopped',
  },
  {
-     pic: './images/Menu-img/PANNIPASTA.png',
+     pic: './images/Menu-img/Pa.png',
      name: 'TOMATO BASIL ONE POT PASTA',
      cate: 'PANNI PASTA',
      link: '#',
@@ -103,7 +103,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Cook pancetta in oil, saute vegetables, add broth, tomatoes and seasonings, bring to simmer, add pasta',
  }, 
  {
-     pic: './images/Menu-img/RISOTO.png',
+     pic: './images/Menu-img/Ris.png',
      name: 'GOURMET MUSHROOM RISOTTO',
      cate: 'RISOTTO',
      link: '#',
