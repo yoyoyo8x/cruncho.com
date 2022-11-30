@@ -28,7 +28,7 @@
           <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
         </div>
         <div class="menubar-pc">
-          <a class="item" href="./index.html"><span>Home</span></a>
+          <a class="item" href="./Home"><span>Home</span></a>
           <a class="item" href="./About.html"><span>About</span></a>
           <a class="item" href="./Menu.html"><span>Menu</span></a>
           <a class="item" href="./Gallery.html"><span>Gallery</span></a>
@@ -120,21 +120,25 @@
       <div class="contact-title">Contact Form</div>
       <form class="contact-form">
         <div class="submit-info">
-          <input required type="text" placeholder="First Name*" />
-          <input required type="text" placeholder="Last Name*" />
+          <input required type="text" placeholder="First Name*" id="first-n" />
+          <div class="required" id="1st-required" style="display:none">Please fill out your first name</div>
+          <input required type="text" placeholder="Last Name*" id="second-n" />
+          <div class="required" id="2nd-required" style="display:none">Please fill out your second name</div>
           <input
             required
             type="email"
             placeholder="Email Address*"
+            id="email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
+          <div class="required" id="email-required" style="display:none">Please fill out your email address</div>
         </div>
         <div class="submit-box">
           <textarea
             placeholder="Your Message"
             class="submit-message"
           ></textarea>
-          <button type="submit" class="btn" id="btn">Send Message</button>
+          <button class="btn" id="submit-btn">Send Message</button>
         </div>
       </form>
     </div>
