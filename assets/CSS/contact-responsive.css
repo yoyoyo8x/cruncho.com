@@ -24,7 +24,7 @@
   .contact-info {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact-form {
+  .submit-content {
     flex-direction: column;
   }
 
@@ -52,7 +52,7 @@
   }
 
   /* --------CONTACT-------- */
-  .contact-form {
+  .submit-content {
     flex-direction: column;
   }
 }

@@ -109,7 +109,7 @@ body {
   font-size: 17px;
 }
 
-.contact-form {
+.submit-content {
   display: flex;
   flex-wrap: wrap;
   max-width: var(--content-width);
@@ -123,8 +123,8 @@ body {
   padding: 0 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.submit-content input,
+.submit-content textarea {
   font-family: "Montserrat", Sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -134,13 +134,13 @@ body {
   padding: 16px 18px;
 }
 
-.contact-form textarea {
+.submit-content textarea {
   height: 194px;
   min-height: 194px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.submit-content input:focus,
+.submit-content textarea:focus {
   box-shadow: 1px 1px 3px #7f7d8e;
 }
 
@@ -159,14 +159,22 @@ body {
   color: white;
   background-color: black;
   padding: 17px 52px;
-  margin: 22px 0px 0px 58px;
+  margin-top: 22px;
   cursor: pointer;
+  position: relative;
 }
 
 .required{
+  display: none;
   font-family: Poppins;
   line-height: 1em;
   padding-bottom: 17px;
   padding-left:10px;
   color: red;
+}
+
+#submit-ajax{
+  position: absolute;
+  height: 55px;
+  margin-top: 23px;
 }
