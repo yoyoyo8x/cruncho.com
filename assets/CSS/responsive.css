@@ -12,6 +12,15 @@
     .box-responsive{
         flex-direction: column;
     }
+    .khung{
+        flex-direction: column;
+    }
+    .khung1{
+        flex-direction: column;
+    }
+    .khung2{
+        flex-direction: column;
+    }
     .boxitem{
         width: 100%;
         padding: 10px 10px 10px 10px;
