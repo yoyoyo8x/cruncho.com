@@ -27,6 +27,7 @@ body {
   margin: 0;
   background-color: var(--bgbody);
   /* padding: 36px 36px 36px 36px; */
+  overflow-x: hidden ;
 }
 /* CSS header*/
 .header-container {
