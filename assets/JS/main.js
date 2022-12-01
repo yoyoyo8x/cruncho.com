@@ -91,3 +91,24 @@ function Persay() {
 }
 
 
+  var controller = new ScrollMagic.Controller();
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '#goout'
+  })
+  .setClassToggle('#goout','fadeInLeft')
+  .addTo(controller);
+
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#goout1'
+  })
+  .setClassToggle('#goout1','fadeInRight')
+  .addTo(controller);
+
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#goout2'
+  })
+  .setClassToggle('#goout2','fadeInTop')
+  .addTo(controller);
+
+
+

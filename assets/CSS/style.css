@@ -291,10 +291,37 @@ body {
   padding: 35px 0px 100px 100px;
   display: flex;
 }
-.box-item1{animation-name:fadeInLeft;
-  animation-timing-function: cubic-bezier(0.38, 0.01, 1, 1);
-  animation-duration: 5s;
+.khung{
+  display: flex;
+  opacity: 0.5;
+  transition: all 3s ease-out;
+  transform:translate3d(-100%,0,0);
+} 
+.khung.fadeInLeft{
+  opacity: 1;
+  transform:translate3d(0,0,0);
 }
+.khung1{
+  display: flex;
+  opacity: 0.5;
+  transition: all 3s ease-out;
+  transform:translate3d(100%,0,0);
+} 
+.khung1.fadeInRight{
+  opacity: 1;
+  transform:translate3d(0,0,0);
+}
+.khung2{
+  display: flex;
+  opacity: 0;
+  transition: all 2s ease-out;
+  transform:translate3d(0,-50%,0);
+} 
+.khung2.fadeInTop{
+  opacity: 1;
+  transform:translate3d(0,0,0);
+}
+/*
 .box-item2{animation-name:fadeInRight;
   animation-timing-function: cubic-bezier(0.38, 0.01, 1, 1);
   animation-duration: 10s;
@@ -302,7 +329,7 @@ body {
 .box-item3{animation-name:fadeInTop;
   animation-timing-function: cubic-bezier(0.38, 0.01, 1, 1);
   animation-duration: 15s;
-}
+} */
 .Container_template img {
   width: 130px;
   height: auto;
