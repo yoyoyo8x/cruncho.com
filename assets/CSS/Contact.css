@@ -162,3 +162,11 @@ body {
   margin: 22px 0px 0px 58px;
   cursor: pointer;
 }
+
+.required{
+  font-family: Poppins;
+  line-height: 1em;
+  padding-bottom: 17px;
+  padding-left:10px;
+  color: red;
+}
