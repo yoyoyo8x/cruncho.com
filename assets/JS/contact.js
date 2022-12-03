@@ -44,8 +44,8 @@ function store() {
     emailInvalid.style.display = "none";
   }
   if (email !== "" && validEmail.test(email) === false) {
-    emailInvalid.style.display = "block";
     emailRequired.style.display = "none";
+    emailInvalid.style.display = "block";
   }
   if (email !== "" && validEmail.test(email) === true) {
     emailRequired.style.display = "none";
