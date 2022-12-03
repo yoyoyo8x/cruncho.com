@@ -15,7 +15,7 @@
       display: flex;
       justify-content: center;
    }
-   .img-signature {
+   #img-signature {
     width: 100%;
     display: flex;
     justify-content: center;
