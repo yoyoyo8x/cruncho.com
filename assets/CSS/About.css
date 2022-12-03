@@ -294,6 +294,7 @@ a{
 .fact-list  {
     display: flex;
     justify-content: center;  
+    gap: 45px;
 }
 
 
@@ -339,13 +340,18 @@ a{
 }
 
 .information-heading {
-  margin: 15px 0;
-  height: 56px;
+  margin: 15px 15px;
+  /* height: 56px; */
 }
 .information-list .information-item{
   display: flex;
     flex-direction: column;
 width: 100%;
+  }
+  .information-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 
@@ -447,6 +453,7 @@ width: 100%;
     font-weight: 600;
     text-transform: capitalize;
     text-align: center;
+    height: 90px;
 
 }
 
@@ -528,7 +535,21 @@ width: 100%;
   background-color: #000000;;
 }
 .feedbacks {
-  padding: 50px 0 43px;
+  /* padding: 120px 0 43px; */
+  
+    background-image: url(https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/01/home-img-7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 50px 0px 50px 0px;
+    background-color: #33333399;
+    /* background-blend-mode: multiply; */
+    background-attachment: fixed;
+  
+}
+.feedback-container {
+  padding: 100px 0;
 }
 
 
