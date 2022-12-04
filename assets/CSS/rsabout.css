@@ -11,6 +11,16 @@
       flex-direction: column;
       align-items: center;
     }
+    .elementor-heading-title {
+      display: flex;
+      justify-content: center;
+   }
+   #img-signature {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+   }
 .content1 {
   width: 100%;
   padding: 5px;
@@ -29,7 +39,7 @@
     }
  
 .fact-container {
-  height: 700px;
+  height: auto;
 }
 .fact-list {
   flex-wrap: wrap;
@@ -54,7 +64,7 @@
  font-size: 50px;
 }
 .art-12year img{
-width: 50%;
+width: 35%;
 }    
 }
 
@@ -65,9 +75,20 @@ display: flex;
   flex-direction: column;
   align-items: center;
 }
+.elementor-heading-title {
+  display: flex;
+  justify-content: center;
+}
+#img-signature {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+ }
 .fact-list {
   padding-left: 0px;
 }
+
 .information-item img{
 width: 93%;
 height: auto;
