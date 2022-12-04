@@ -101,14 +101,14 @@ function Persay() {
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#goout1'
   })
-  .setClassToggle('#goout1','fadeInRight')
+  .setClassToggle('#goout1','fadeInLeft')
   .addTo(controller);
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#goout2'
   })
-  .setClassToggle('#goout2','fadeInTop')
-  .addTo(controller);
+  .setClassToggle('#goout2','fadeInLeft')
+  .addTo(controller); 
 
 
 

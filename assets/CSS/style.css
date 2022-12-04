@@ -302,11 +302,11 @@ body {
   opacity: 1;
   transform:translate3d(0,0,0);
 }
-.khung1{
+/* .khung1{
   display: flex;
   opacity: 0.5;
   transition: all 2s ease-out;
-  transform:translate3d(100%,0,0);
+  transform:translate3d(-100%,0,0);
 } 
 .khung1.fadeInRight{
   opacity: 1;
@@ -316,12 +316,12 @@ body {
   display: flex;
   opacity: 0;
   transition: all 2s ease-out;
-  transform:translate3d(0,-50%,0);
+  transform:translate3d(-100%,0,0);
 } 
 .khung2.fadeInTop{
   opacity: 1;
   transform:translate3d(0,0,0);
-}
+} */
 /*
 .box-item2{animation-name:fadeInRight;
   animation-timing-function: cubic-bezier(0.38, 0.01, 1, 1);
@@ -427,7 +427,8 @@ body {
 
 /* People Say */
 .Bg_Peoplesay {
-  width: 930px;
+  width: 100%;
+  max-width: 930px;
   margin-left: auto;
   margin-right: auto;
 }
