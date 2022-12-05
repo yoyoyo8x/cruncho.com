@@ -4,7 +4,7 @@
     #header-container-container-desktop{
         display: none;}
     body{
-        padding: 5px 10px 10px 10px;
+        padding: 5px 7px 10px 7px;
     }    
     .Welcome{
         padding: 35px 0px 35px 0px;
@@ -72,20 +72,24 @@
         width: 100%;
         max-width: 739px;
    }
+   audio{
+        top: 93.5%;
+        height: 25px;
+   }
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
     #header-container-container-mobile{
         display: none;}
-    body{
+    /* body{
         padding: 5px 10px 10px 10px;
-    }   
+    }    */
 
     .slideshow .menu-container{
         top: 30%;
     }
     .slideshow .btn_menu{
-        margin: 75px 0px 94px 0px;
+        margin: 30px 0px 94px 0px;
     }
     .Welcome h2{
         margin: 0 0 40px 0;
@@ -134,6 +138,9 @@
     #btn_close {
         right: 25px;
     }
+    audio{
+        top: 76%;
+   }
 
 }
 /* Tablet: > 1024px */

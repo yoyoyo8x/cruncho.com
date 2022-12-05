@@ -240,6 +240,14 @@ body {
   border-radius: 3px 0 0 3px;
 }
 /*________________________________________________ */
+/* audio */
+audio{
+position: absolute;
+top: 78%;
+width: 80%;
+height: 50px;
+left: 10%
+}
 
 /* main welcome */
 .Welcome {
