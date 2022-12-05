@@ -199,5 +199,81 @@ function cateFilter (cateFilter,thisEle){
 renderMenuItems(listMenu);
 
 
+//renderlist
+let listItems = [ 
+    {
+        name: 'GARLIC SHRIMP & TONNARELLI PASTA',
+        link: '#',
+        cate: 'Title',
+        price: '$19.99',
+        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    },
+    {
+        name: 'GRILLED HANGER STEAK',
+        link: '#',
+        cate: 'Title',
+        price: '$25.50',
+        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    },
+    {
+        name: 'PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI',
+        link: '#',
+        cate: 'Title',
+        price: '$15.50',
+        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    },
+    {
+        name: 'GRILLED FREE RANGE CHICKEN SALAD',
+        link: '#',
+        cate: 'Title',
+        price: '$19.99',
+        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    },
+    {
+        name: 'GRILLED BBQ BABY BACK RIBS',
+        link: '#',
+        cate: 'Title',
+        price: '$23.00',
+        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    },
+];
+function renderList() {
+    const listEle = document.getElementById('list');
+    let eleRender = '';
+    listItems.forEach((i) => {
+        eleRender = eleRender + `
+            <div class='container_item'>
+                <div class='item'>
+                    <h5>${i.name}</h5>
+                    <h5>${i.price}</h5>
+                </div>
+                <p>${i.describe}</p>
+            </div>
+        `
+    })
+    if(listEle)
+        listEle.insertAdjacentHTML('beforeend', eleRender);
+}
+renderList();
+
+function renderList1() {
+    const listEle = document.getElementById('list1');
+    let eleRender = '';
+    listItems.forEach((i) => {
+        eleRender = eleRender + `
+            <div class='container_item'>
+                <div class='item'>
+                    <h5>${i.name}</h5>
+                    <h5>${i.price}</h5>
+                </div>
+                <p>${i.describe}</p>
+            </div>
+        `
+    })
+    if(listEle)
+        listEle.insertAdjacentHTML('beforeend', eleRender);
+}
+renderList1();
+
 
 

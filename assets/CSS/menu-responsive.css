@@ -20,6 +20,16 @@
     width: 100%;
     overflow: hidden;
   }
+  .container_menu_nav{
+    flex-wrap: wrap;
+  }
+  .container_menu_content{
+    padding: 0;
+  }
+  .container_menu_content .Food{
+    width: 100%;
+  }
+
   .Bar_Menu{
     flex-wrap: wrap;
   }
@@ -91,6 +101,9 @@
   }
   .col2_Menu_Description .list_item {
     padding: 0;
+  }
+  .container_menu_nav{
+    flex-wrap: wrap;
   }
 }
 
