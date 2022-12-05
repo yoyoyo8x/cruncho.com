@@ -47,7 +47,7 @@
   }
 
 }
-@media only screen and (max-width: 739px) and (min-width:367px){
+@media only screen and (max-width: 599px) and (min-width:367px){
   /* --------NAVBAR-------- */
   #btn-open {
     display: block;
@@ -106,7 +106,7 @@
 }
 
 /* Tablet: width >= 740px and width < 1024px */
-@media only screen and (max-width: 1023px) and (min-width: 740px) {
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
   /* --------NAVBAR-------- */
   #btn-open {
     display: block;

@@ -29,7 +29,7 @@
 }
 
 .item.show {
-  animation: 350ms showing linear;
+  animation: 700ms showing linear;
 }
 
 .item.hide{
@@ -137,4 +137,23 @@ scale:0.9;
 .item:hover{
   filter: brightness(50%);
   transition: all 1s;
+}
+
+/* Carousel */
+.carousel-container {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.8); 
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }

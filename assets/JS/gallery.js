@@ -1,3 +1,4 @@
+// Fillter
 const filterContainer = document.querySelector(".filter");
 const galleryItems = document.querySelectorAll(".item");
 
@@ -24,3 +25,7 @@ filterContainer.addEventListener("click", (event) =>{
 window.onload = function(){
   document.getElementById("appe").click();
 }
+
+// Modal
+var modal = document.getElementById("modal-filer");
+
