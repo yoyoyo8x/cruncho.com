@@ -20,10 +20,11 @@
         padding: 10px 10px 10px 10px;
     }
     .slideshow .menu-container{
-        top: 7%;
+        top: 5%;
     }
     .slideshow p{
         padding: 0px 45px;
+        font-size: 14px;
     }
     .Menu {
         padding: 0;
@@ -50,8 +51,14 @@
         max-width: 930px;
         width: auto;
     }
+    .slideshow h5{
+        font-size: 50px;
+    }
     .slideshow2 p {
         width: auto;
+    }
+    #viewmenu{
+        font-size: 12px;
     }
     .Container_say{
         padding: 0;
@@ -70,6 +77,9 @@
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
     #header-container-container-mobile{
         display: none;}
+    body{
+        padding: 5px 10px 10px 10px;
+    }   
 
     .slideshow .menu-container{
         top: 30%;
