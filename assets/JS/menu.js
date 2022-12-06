@@ -276,4 +276,28 @@ function renderList1() {
 renderList1();
 
 
+var controller = new ScrollMagic.Controller();
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#goleft'
+})
+.setClassToggle('#goleft','goLeft')
+.addTo(controller);
+
+var ourScene = new ScrollMagic.Scene({
+  triggerElement: '#goright'
+})
+.setClassToggle('#goright','goRight')
+.addTo(controller);
+
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#backleft'
+})
+.setClassToggle('#backleft','backLeft')
+.addTo(controller);
+
+var ourScene = new ScrollMagic.Scene({
+  triggerElement: '#backright'
+})
+.setClassToggle('#backright','backRight')
+.addTo(controller);
 

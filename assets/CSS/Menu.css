@@ -145,6 +145,14 @@
   .col1_Menu_Description{
     width: 100%;
     padding: 10px 25px 10px 25px; 
+    transition: all 2s ease-out;
+    transform:translate3d(0,0,0);
+  }
+  .col1_Menu_Description.goLeft{
+    transform:translate3d(100%,0,0);
+  }
+  .col1_Menu_Description.backLeft{
+    transform:translate3d(-100%,0,0);
   }
   .col1_Menu_Description img{
     width: 100%;
@@ -158,6 +166,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 2s ease-out;
+    transform:translate3d(0,0,0);
+  }
+  .col2_Menu_Description.goRight{
+    transform:translate3d(-100%,0,0);
+  }
+  .col2_Menu_Description.backRight{
+    transform:translate3d(100%,0,0);
   }
   .col2_Menu_Description .list_item{
     margin: 0px 0px 0px 0px;
