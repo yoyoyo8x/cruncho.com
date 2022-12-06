@@ -5,6 +5,9 @@
 /* ? Mobile width < 740px */
 
 @media screen and (max-width: 739px) {
+  .content{
+    padding: 0 5px;
+  }
   .elementor-container {
     display: flex;
     flex-direction: column;
@@ -31,6 +34,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding:0 5px;
   }
   .information-item img {
     width: 100%;
@@ -50,14 +54,14 @@
     display: flex;
     justify-content: center;
   }
-  .feedbacks p {
+  /* .feedbacks p {
     width: 93%;
-  }
+  } */
   .h2 span{
     height: 100%;
   }
   .art-slogan h2 {
-    font-size: 50px;
+    font-size: 55px;
     line-height: 70px;
   }
   .art-12year {
@@ -90,7 +94,7 @@
   }
 
   .information-item img {
-    width: 93%;
+    width: 100%;
     height: auto;
   }
 
@@ -143,7 +147,6 @@
     display: none;
   }
   .header-container {
-    position: sticky;
     top: 0;
     padding: 0;
     width: 100%;

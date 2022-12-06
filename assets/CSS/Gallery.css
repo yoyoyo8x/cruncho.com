@@ -14,8 +14,8 @@
   --content-width: 1200px;
 }
 
-.menubar-pc a:nth-child(4),
-.menubar-mobile a:nth-child(5) {
+.menubar-pc a:nth-child(3),
+.menubar-mobile a:nth-child(4) {
   color: #f84747;
 }
 
