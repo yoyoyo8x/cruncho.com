@@ -94,9 +94,14 @@
     width: 100%;
   }
 
+  .banner-container{
+    padding-right:8px;
+  }
+
   .banner-content {
     position: relative;
     text-align: center;
+    font-size: 50px;
   }
 
   /* --------FOOTER-------- */

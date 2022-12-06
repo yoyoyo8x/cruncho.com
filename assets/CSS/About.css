@@ -134,7 +134,7 @@ a{
   gap: 20px;
   padding: 90px 0 0 60px;
   display: none;
-  /* z-index: 99; */
+  z-index: 99;
 }
 
 .menubar-mobile a {
@@ -143,6 +143,7 @@ a{
   margin: 0 5px;
   font-family: "Playfair Display", Sans-serif;
   font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .btn-close {
@@ -577,21 +578,6 @@ width: 100%;
   z-index: 100;
 }
 
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-body {
-  position: relative;
-  animation: animatebottom 1300ms linear;
-}
 /* ------AUTOSCROLL------ */
 
 .auto-btn {
