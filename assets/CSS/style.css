@@ -585,7 +585,7 @@ left: 10%
 
 .copyright {
   text-align: center;
-  background-color: rgb(40, 37, 37);
+  background-color: var(--bgheader);
 }
 .copyright p {
   margin: 0;
