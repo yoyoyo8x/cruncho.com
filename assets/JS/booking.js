@@ -83,15 +83,8 @@ function store() {
 
   if (people === "" || people === null) {
     peopleRequired.style.display = "block";
-    peopleInvalid.style.display = "none";
-  }
-  if (people !== "" && people === 0) {
+  } else {
     peopleRequired.style.display = "none";
-    peopleInvalid.style.display = "block";
-  }
-  if (people !== "" && people !== 0) {
-    peopleRequired.style.display = "none";
-    peopleInvalid.style.display = "none";
   }
 
   if (time === "" || time === null) {
@@ -113,7 +106,6 @@ function store() {
     phone === null ||
     people === "" ||
     people === null ||
-    people === 0 ||
     time === "" ||
     time === null ||
     date === "" ||
