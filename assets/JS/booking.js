@@ -28,6 +28,7 @@ function store() {
   var time = document.getElementById("time").value;
   var note = document.getElementById("note").value;
   validEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  validPhone = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
 
   const info = {
     firstName: firstName,
@@ -75,11 +76,19 @@ function store() {
     phoneRequired.style.display = "block";
     phoneInvalid.style.display = "none";
   }
+  if (phone !== "" && validPhone.test(phone) === false) {
+    phoneRequired.style.display = "none";
+    phoneInvalid.style.display = "block";
+  }
+  if (phone !== "" && validPhone.test(phone) === true) {
+    phoneRequired.style.display = "none";
+    phoneInvalid.style.display = "none";
+  }
 
   if (people === "" || people === null) {
     peopleRequired.style.display = "block";
     peopleInvalid.style.display = "none";
-  } 
+  }
   if (people !== "" && people === 0) {
     peopleRequired.style.display = "none";
     peopleInvalid.style.display = "block";
@@ -103,6 +112,7 @@ function store() {
     email === "" ||
     email === null ||
     validEmail.test(email) === false ||
+    validPhone.test(phone) === false||
     phone === "" ||
     phone === null ||
     people === "" ||
