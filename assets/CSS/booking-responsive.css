@@ -1,0 +1,101 @@
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  /* --------NAVBAR-------- */
+  #btn-open {
+    display: block;
+    margin-right: 30px;
+  }
+  .header-container-flex-desktop .menubar-pc {
+    display: none;
+  }
+
+  .header-container-flex-desktop .Logo-desktop {
+    padding: 0;
+  }
+
+  .header-container {
+    top: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* --------BOKING-------- */
+  .title {
+    text-align: center;
+  }
+
+  .booking-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .name,
+  .booking-info,
+  .booking-time {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .img-booking {
+    width: 100%;
+    margin: 0px;
+  }
+
+  /* --------FOOTER-------- */
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  /* --------NAVBAR-------- */
+  #btn-open {
+    display: block;
+    margin-right: 30px;
+  }
+  .header-container-flex-desktop .menubar-pc {
+    display: none;
+  }
+  .header-container {
+    top: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* --------BOKING-------- */
+  .title {
+    text-align: center;
+  }
+
+  .booking-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  /* .name,
+  .booking-info,
+  .booking-time {
+    flex-direction: column;
+    gap: 0px;
+  } */
+
+  .img-booking {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+/* PC: width >= 1040px */
+@media only screen and (max-width:1501px) and (min-width:1024px){
+    .booking-container{
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+}

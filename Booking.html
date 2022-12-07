@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/CSS/base.css" />
+    <link rel="stylesheet" href="./assets/CSS/booking.css" />
+    <link rel="stylesheet" href="./assets/CSS/booking-responsive.css" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <!---------NAVBAR---------->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a href="./index.html"><span>Home</span></a>
+          <a href="./Menu.html"><span>Menu</span></a>
+          <a href="./Gallery.html"><span>Gallery</span></a>
+          <a href="./About.html"><span>About</span></a>
+          <a href="./Contact.html"><span>Contact</span></a>
+          <a href="./Booking.html"><span>Booking</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a href="./index.html">Home</a>
+        <a href="./Menu.html">Menu</a>
+        <a href="./Gallery.html">Gallery</a>
+        <a href="./About.html">About</a>
+        <a href="./Contact.html">Contact</a>
+        <a href="./Booking.html">Booking</a>
+      </nav>
+    </section>
+    <!---------BOOKING---------->
+    <div class="booking-container">
+      <form class="booking-content">
+        <div class="title">Booking</div>
+        <div class="name">
+          <input type="text" placeholder="First Name*" id="first-n" />
+          <div class="required" id="1st-required">
+            Please fill out your first name
+          </div>
+          <input type="text" placeholder="Last Name*" id="second-n" />
+          <div class="required" id="2nd-required">
+            Please fill out your second name
+          </div>
+        </div>
+        <div class="booking-info">
+          <input type="email" placeholder="Email Address*" id="email" />
+          <div class="required" id="email-required">
+            Please fill out your email address
+          </div>
+          <div class="required" id="email-invalid">Invalid Email Address</div>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number*"
+            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+            required
+          />
+        </div>
+        <input type="number" id="people" placeholder="Guest Numbers" min="1" required />
+        <div class="booking-time">
+          <input type="time" id="time" required />
+          <input type="date" id="checkin-date" required />
+        </div>
+        <textarea placeholder="Notes" class="note" id="note"></textarea>
+        <div class="button-submit">
+          <button class="btn" id="submit-btn">Book a table</button>
+          <img
+            src="./images/contact-img/submit-ajax.gif"
+            id="submit-ajax"
+            idalt="ajax-loader"
+            style="visibility: hidden"
+          />
+        </div>
+      </form>
+     
+        <img src="./images/booking.png" alt="booking" class="img-booking"/>
+
+    </div>
+
+    <!---------FOOTER---------->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+            89GR.
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/booking.js"></script>
+  <script src="./assets/JS/base.js"></script>
+</html>

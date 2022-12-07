@@ -1,0 +1,133 @@
+/* --------BASE-------- */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --body: #7f7d8e;
+  --bgbody: #fff;
+  --bgheader: #25292d;
+  --text: #fff;
+  --textbutton: #333333;
+  --content-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--bgbody);
+  /* overflow-x: hidden; */
+  object-fit: cover;
+}
+
+.menubar-pc a:last-child,
+.menubar-mobile a:last-child {
+  color: #f84747;
+}
+
+/* ------BOOKING------ */
+.title {
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 15px 0;
+  color: var(--bgheader);
+  /* text-align: center; */
+}
+
+.booking-container {
+  margin-top:10px;
+  margin-bottom: 30px;
+  padding-left: 200px;
+  padding-right:150px;
+  display: flex;
+  gap: 10px;
+}
+
+.booking-content {
+  flex: 1;
+}
+
+.booking-content input,
+.booking-content textarea {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ebeced;
+  padding: 16px 18px;
+}
+
+.required {
+  display: none;
+  font-family: Poppins;
+  line-height: 1em;
+  padding-bottom: 17px;
+  padding-left: 10px;
+  color: red;
+}
+
+.img-booking {
+  margin: 25px 0px;
+}
+
+.name,
+.booking-info,
+.booking-time {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.booking-content textarea {
+  height: 150px;
+  min-height: 150px;
+}
+
+.booking-content input:focus,
+.booking-content textarea:focus {
+  box-shadow: 1px 1px 3px #7f7d8e;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Rubik", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  padding: 17px 52px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+#submit-ajax {
+  position: absolute;
+  height: 55px;
+  margin-top: 23px;
+}
