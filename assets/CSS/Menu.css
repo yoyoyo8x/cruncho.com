@@ -78,7 +78,7 @@
     margin: 0;
 }
 .container_menu_content .Food{
-    width: 25%;
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -86,7 +86,6 @@
 .container_menu_content img{
     margin-bottom: 20px;
     width: 100%;
-    height: 306px;
 }
 .container_menu_content .infor{
     display: flex;
@@ -146,13 +145,10 @@
     width: 100%;
     padding: 10px 25px 10px 25px; 
     transition: all 2s ease-out;
-    transform:translate3d(0,0,0);
+    transform:rotate(0deg);
   }
-  .col1_Menu_Description.goLeft{
-    transform:translate3d(100%,0,0);
-  }
-  .col1_Menu_Description.backLeft{
-    transform:translate3d(-100%,0,0);
+  .col1_Menu_Description.rotate{
+    transform:rotate(360deg);
   }
   .col1_Menu_Description img{
     width: 100%;
@@ -167,13 +163,10 @@
     flex-direction: column;
     justify-content: center;
     transition: all 2s ease-out;
-    transform:translate3d(0,0,0);
+    opacity: 0;
   }
-  .col2_Menu_Description.goRight{
-    transform:translate3d(-100%,0,0);
-  }
-  .col2_Menu_Description.backRight{
-    transform:translate3d(100%,0,0);
+  .col2_Menu_Description.hide{
+    opacity: 1;
   }
   .col2_Menu_Description .list_item{
     margin: 0px 0px 0px 0px;
