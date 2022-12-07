@@ -1,5 +1,8 @@
 /* Mobile: width < 740px */
 @media only screen and (max-width: 739px) {
+  body {
+    overflow-x: hidden;
+  }
   /* --------NAVBAR-------- */
   #btn-open {
     display: block;
@@ -52,6 +55,9 @@
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (max-width: 1023px) and (min-width: 740px) {
+  body {
+    overflow-x: hidden;
+  }
   /* --------NAVBAR-------- */
   #btn-open {
     display: block;
@@ -93,9 +99,9 @@
 }
 
 /* PC: width >= 1040px */
-@media only screen and (max-width:1501px) and (min-width:1024px){
-    .booking-container{
-        padding-left: 50px;
-        padding-right: 10px;
-    }
+@media only screen and (max-width: 1501px) and (min-width: 1024px) {
+  .booking-container {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
 }

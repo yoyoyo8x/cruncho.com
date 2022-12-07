@@ -57,7 +57,7 @@
     </section>
     <!---------BOOKING---------->
     <div class="booking-container">
-      <form class="booking-content">
+      <form class="booking-content" name="booking">
         <div class="title">Booking</div>
         <div class="name">
           <input type="text" placeholder="First Name*" id="first-n" />
@@ -82,6 +82,10 @@
             pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
             required
           />
+          <div class="required" id="phone-required">
+            Please fill out your phone number
+          </div>
+          <div class="required" id="phone-invalid">Invalid Phone Number</div>
         </div>
         <input type="number" id="people" placeholder="Guest Numbers" min="1" required />
         <div class="booking-time">
