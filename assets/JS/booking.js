@@ -11,10 +11,6 @@ var peopleInvalid = document.getElementById("people-invalid");
 
 document.booking.addEventListener("submit", function (event) {
   event.preventDefault();
-  subAjax.style.visibility = "visible";
-  setTimeout(function () {
-    subAjax.style.visibility = "hidden";
-  }, 1500);
 });
 
 function store() {
