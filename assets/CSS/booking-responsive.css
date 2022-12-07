@@ -41,10 +41,13 @@
     flex-direction: column;
     gap: 0px;
   }
+  
+  .img-booking-container{
+    margin:0;
+  }
 
   .img-booking {
     width: 100%;
-    margin: 0px;
   }
 
   /* --------FOOTER-------- */
@@ -92,9 +95,12 @@
     gap: 0px;
   } */
 
+  .img-booking-container{
+    margin:0;
+  }
+
   .img-booking {
     width: 100%;
-    margin: 0px;
   }
 }
 
