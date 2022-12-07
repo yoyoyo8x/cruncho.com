@@ -57,10 +57,10 @@ body {
 }
 
 .booking-container {
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 30px;
   padding-left: 200px;
-  padding-right:120px;
+  padding-right: 120px;
   display: flex;
   gap: 10px;
 }
@@ -90,8 +90,7 @@ body {
 }
 
 .img-booking-container {
-  /* margin: 25px 0px; */
-  margin-top:70px;
+  margin-top: 70px;
 }
 
 .name,
@@ -102,7 +101,7 @@ body {
   gap: 10px;
 }
 
-.alert-box{
+.alert-box {
   width: 100%;
 }
 

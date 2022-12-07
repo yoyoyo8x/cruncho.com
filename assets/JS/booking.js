@@ -112,7 +112,7 @@ function store() {
     email === "" ||
     email === null ||
     validEmail.test(email) === false ||
-    validPhone.test(phone) === false||
+    validPhone.test(phone) === false ||
     phone === "" ||
     phone === null ||
     people === "" ||
