@@ -116,9 +116,9 @@ function store() {
     return false;
   }
 
-  localStorage.setItem("userInfo", JSON.stringify(info));
-  const userInfo = localStorage.getItem("userInfo");
-  console.log(userInfo);
+  localStorage.setItem("bookingInfo", JSON.stringify(info));
+  const bookingInfo = localStorage.getItem("bookingInfo");
+  console.log(bookingInfo);
 }
 
 document.getElementById("submit-btn").onclick = store;
