@@ -83,7 +83,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      name: 'KUNG PAO CHICKEN',
      cate: 'MAIN DISHES',
      link: '#',
-     price: '$19.99',
+     price: '$25.00',
      describe:'Peppers, chicken, peanuts',
  },
  {
@@ -91,7 +91,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      link: '#',
      cate: 'PANNI PASTA',
      name: 'GARLIC MUSHROOM NOODLES',
-     price: '$19.99',
+     price: '$20.00',
      describe: 'Egg noodles, mushrooms, garlic cloves finely chopped',
  },
  {
@@ -115,7 +115,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      name: 'GRILLED FREE SALAD',
      link: '#',
      cate: 'SALAS',
-     price: '$19.99',
+     price: '$18.00',
      describe:'Ginger, seasonal vegetables',
  },
  {
@@ -123,7 +123,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      name: 'SALAD CHERRY TOMATOES',
      cate: 'SALAS',
      link: '#',
-     price: '$19.99',
+     price: '$18.00',
      describe:'Cucumber, cherry tomatoes, boss, olive oil',
  },
  {
@@ -131,7 +131,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      name: 'BAKED LOBSTER AND OCEAN CRAB SOUP',
      cate: 'SAUCES SOUPS',
      link: '#',
-     price: '$19.99',
+     price: '$20.00',
      describe:'Baked Lobster and Ocean Crab soup, en croute ',
  },
  {
@@ -139,7 +139,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      name: 'CREAMY MUSHROOM CAPPUCCINO',
      cate: 'SAUCES SOUPS',
      link: '#',
-     price: '$19.99',
+     price: '$20.00',
      describe:'Creamy mushroom cappuccino, pita bread with herb and Parmesan cheese',
  },   
 ];
@@ -278,26 +278,17 @@ renderList1();
 
 var controller = new ScrollMagic.Controller();
 var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#goleft'
+    triggerElement: '#rotate',
+    reverse: false
 })
-.setClassToggle('#goleft','goLeft')
+.setClassToggle('#rotate','rotate')
 .addTo(controller);
 
 var ourScene = new ScrollMagic.Scene({
-  triggerElement: '#goright'
+  triggerElement: '#hide',
+  reverse: false
 })
-.setClassToggle('#goright','goRight')
+.setClassToggle('#hide','hide')
 .addTo(controller);
 
-var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#backleft'
-})
-.setClassToggle('#backleft','backLeft')
-.addTo(controller);
-
-var ourScene = new ScrollMagic.Scene({
-  triggerElement: '#backright'
-})
-.setClassToggle('#backright','backRight')
-.addTo(controller);
 
