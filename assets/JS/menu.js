@@ -87,7 +87,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Peppers, chicken, peanuts',
  },
  {
-    pic: './images/Menu-img/mon1.png',
+    pic: './images/Menu-img/main1.png',
     name: 'Angus tenderloin with lobster',
     cate: 'MAIN DISHES',
     link: '#',
@@ -95,7 +95,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
     describe:'Australian Black Beef Tenderloin with Lobster',
 },
 {
-    pic: './images/Menu-img/mon2.png',
+    pic: './images/Menu-img/main2.png',
     name: 'Grilled chicken with vegetables',
     cate: 'MAIN DISHES',
     link: '#',
