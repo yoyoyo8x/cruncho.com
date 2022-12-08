@@ -617,6 +617,7 @@ left: 10%
 .auto-btn i {
   color: rgb(68, 66, 66);
   font-size: 30px;
+  margin-right: 0;
 }
 
 /* ------LOADING------ */
