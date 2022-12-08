@@ -87,6 +87,22 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Peppers, chicken, peanuts',
  },
  {
+    pic: './images/Menu-img/maindishes1.png',
+    name: 'Angus tenderloin with lobster',
+    cate: 'MAIN DISHES',
+    link: '#',
+    price: '$25.00',
+    describe:'Australian Black Beef Tenderloin with Lobster',
+},
+{
+    pic: './images/Menu-img/maindishes2.png',
+    name: 'Grilled chicken with vegetables',
+    cate: 'MAIN DISHES',
+    link: '#',
+    price: '$25.00',
+    describe:'Marinade, chicken, vegetables ',
+},
+ {
      pic: './images/Menu-img/Food1.png',
      link: '#',
      cate: 'PANNI PASTA',
@@ -202,39 +218,44 @@ renderMenuItems(listMenu);
 //renderlist
 let listItems = [ 
     {
-        name: 'GARLIC SHRIMP & TONNARELLI PASTA',
+        name: 'Angus tenderloin with lobster',
         link: '#',
+        star:'<i class="fa fa-star" aria-hidden="true"></i>',
         cate: 'Title',
-        price: '$19.99',
-        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+        price: '$40.00',
+        describe: 'Australian Black Beef Tenderloin with Lobster'
     },
     {
-        name: 'GRILLED HANGER STEAK',
+        name: 'Grilled chicken with vegetables',
+        star:'<i class="fa fa-star" aria-hidden="true"></i>',
         link: '#',
         cate: 'Title',
-        price: '$25.50',
-        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+        price: '$30.00',
+        describe: 'Marinade, chicken, vegetables'
     },
     {
-        name: 'PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI',
+        name: 'Beff steak',
         link: '#',
+        star:'',
         cate: 'Title',
-        price: '$15.50',
-        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+        price: '$25.00',
+        describe: 'Beef steak, potato, tomato'
     },
     {
-        name: 'GRILLED FREE RANGE CHICKEN SALAD',
+        name: 'Asian hoisin pork',
         link: '#',
+        star:'',
         cate: 'Title',
-        price: '$19.99',
-        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+        price: '$25.00',
+        describe: 'Pork, seasonal vegetables, eggs, bread'
     },
     {
-        name: 'GRILLED BBQ BABY BACK RIBS',
+        name: 'Kung pao chicken',
         link: '#',
+        star:'',
         cate: 'Title',
-        price: '$23.00',
-        describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+        price: '$25.00',
+        describe: 'Peppers, chicken, peanuts'
     },
 ];
 function renderList() {
@@ -244,7 +265,7 @@ function renderList() {
         eleRender = eleRender + `
             <div class='container_item'>
                 <div class='item'>
-                    <h5>${i.name}</h5>
+                    <h5>${i.name} ${i.star}</h5>
                     <h5>${i.price}</h5>
                 </div>
                 <p>${i.describe}</p>
@@ -256,24 +277,24 @@ function renderList() {
 }
 renderList();
 
-function renderList1() {
-    const listEle = document.getElementById('list1');
-    let eleRender = '';
-    listItems.forEach((i) => {
-        eleRender = eleRender + `
-            <div class='container_item'>
-                <div class='item'>
-                    <h5>${i.name}</h5>
-                    <h5>${i.price}</h5>
-                </div>
-                <p>${i.describe}</p>
-            </div>
-        `
-    })
-    if(listEle)
-        listEle.insertAdjacentHTML('beforeend', eleRender);
-}
-renderList1();
+// function renderList1() {
+//     const listEle = document.getElementById('list1');
+//     let eleRender = '';
+//     listItems.forEach((i) => {
+//         eleRender = eleRender + `
+//             <div class='container_item'>
+//                 <div class='item'>
+//                     <h5>${i.name}</h5>
+//                     <h5>${i.price}</h5>
+//                 </div>
+//                 <p>${i.describe}</p>
+//             </div>
+//         `
+//     })
+//     if(listEle)
+//         listEle.insertAdjacentHTML('beforeend', eleRender);
+// }
+// renderList1();
 
 
 var controller = new ScrollMagic.Controller();
