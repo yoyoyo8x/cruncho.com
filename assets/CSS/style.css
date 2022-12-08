@@ -127,7 +127,7 @@ body {
   display: auto;
   background-image: url(../../images/BG.png);
   height: max-content;
-  min-height: 85vh;
+  min-height: 607px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -138,7 +138,7 @@ body {
   display: auto;
   background-image: url(../../images/bg2.png);
   height: max-content;
-  min-height: 85vh;
+  min-height: 607px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -149,7 +149,7 @@ body {
   display: auto;
   background-image: url(../../images/bg3.png);
   height: max-content;
-  min-height: 85vh;
+  min-height: 607px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -308,7 +308,7 @@ left: 10%
 }
 .khung{
   display: flex;
-  opacity: 0.5;
+  opacity: 0;
   transition: all 1s ease-out;
   transform:translate3d(-100%,0,0);
 } 
@@ -616,6 +616,22 @@ left: 10%
 }
 .auto-btn i {
   color: rgb(68, 66, 66);
+  font-size: 30px;
+  margin-right: 0;
+}
+
+.audio-btn{
+  display: block;
+  position: fixed;
+  padding: 5px;
+  border: none;
+  bottom: 20px;
+  left: 10px;
+  background-color: var(--text);
+  opacity: 0.6;
+  border-radius: 80%;
+}
+.audio-btn i{
   font-size: 30px;
   margin-right: 0;
 }

@@ -1,283 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  -->
-    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="./assets/CSS/Panel.css">
-    <link rel="stylesheet" href="./assets/CSS/responsive.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/Panel.css" />
+    <link rel="stylesheet" href="./assets/CSS/responsive.css" />
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <section class="header-container">
-            <div id="header-container-container-mobile">
-            <div class="header-container-flex-mobile">
-                <div class="Logo-mobile">
-                    <img src="./images/slide-logo.png" alt="">
-                </div>
-                    <div class="menubar1">
-                        <button id="btn_open1" onclick="openPanel()"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                    </div>
+      <section class="header-container">
+        <div id="header-container-container-mobile">
+          <div class="header-container-flex-mobile">
+            <div class="Logo-mobile">
+              <img src="./images/slide-logo.png" alt="" />
             </div>
+            <div class="menubar1">
+              <button id="btn_open1" onclick="openPanel()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
             </div>
-            <div id="header-container-container-desktop">
-            <div class="header-container-flex-desktop">
-                <div class="Logo-desktop">
-                    <img src="./images/logo.png" alt="">
-                </div>
-                <div class="menubar" >
-                    <button id="btn_open" onclick="openPanel()"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                </div>
+          </div>
+        </div>
+        <div id="header-container-container-desktop">
+          <div class="header-container-flex-desktop">
+            <div class="Logo-desktop">
+              <img src="./images/logo.png" alt="" />
             </div>
+            <div class="menubar">
+              <button id="btn_open" onclick="openPanel()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
             </div>
-            <div class="slideshow">
-                <!-- slide0 -->
-                <div class="bg-header fade bg1">
-                    <!-- <img src="./images/BG.png" alt=""> -->
-                <ul class="menu-container">
-                    <h5>Fresh Restaurant</h5>
-                    <p>Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món ăn tinh tế ở Cruchos. Với một loạt các món ăn thế giới để lựa chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của chúng tôi!</p>
-                <div class="btn_menu">
-                    <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
-                </div>     
-                </ul>
-                </div>
-                <!-- slide1 -->
-                <div class="bg-header fade bg2">
-                    <!-- <img src="./images/bg2.png" alt=""> -->
-                <ul class="menu-container">
-                    <h5>Our Meals</h5>
-                    <p>Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món ăn tinh tế tại Crunchos. Với một loạt các món ăn thế giới để lựa chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của chúng tôi!</p>
-                <div class="btn_menu">
-                    <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
-                </div>     
-                </ul>
-                </div>
-                <!-- slide2 -->
-                <div class="bg-header fade bg3">
-                    <!-- <img src="./images/bg3.png" alt=""> -->
-                <ul class="menu-container">
-                    <h5>Authenic Dishes</h5>
-                    <p>Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món ăn tinh tế tại Crunchos. Với một loạt các món ăn thế giới để lựa chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của chúng tôi!</p>
-                <div class="btn_menu">
-                    <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
-                </div>     
-                </ul>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>   
-            <div id="Containerpanel" class="show"> 
-                <div id="Khungpanel">
-                    <div class="Headerpanel">
-                        <a class="containeritem" href="./index.html"><span class="item">Home</span></a>
-                        <a class="containeritem" href="./Menu.html"><span class="item">Menu</span></a>
-                        <a class="containeritem" href="./Gallery.html"><span class="item">Gallery</span></a>
-                        <a class="containeritem" href="./About.html"><span class="item">About</span></a>
-                        <a class="containeritem" href="./Contact.html"><span class="item">Contact</span></a>
-                        <a class="containeritem" href="./Booking.html"><span class="item">Booking</span></a>
-                    </div>
-                </div>
-                    <button id="btn_close" onclick="closePanel()">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
-                </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <!-- slide0 -->
+          <div class="bg-header fade bg1">
+            <!-- <img src="./images/BG.png" alt=""> -->
+            <ul class="menu-container">
+              <h5>Fresh Restaurant</h5>
+              <p>
+                Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món
+                ăn tinh tế ở Cruchos. Với một loạt các món ăn thế giới để lựa
+                chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa
+                tại nhà hàng của chúng tôi!
+              </p>
+              <div class="btn_menu">
+                <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
+              </div>
+            </ul>
+          </div>
+          <!-- slide1 -->
+          <div class="bg-header fade bg2">
+            <!-- <img src="./images/bg2.png" alt=""> -->
+            <ul class="menu-container">
+              <h5>Our Meals</h5>
+              <p>
+                Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món
+                ăn tinh tế tại Crunchos. Với một loạt các món ăn thế giới để lựa
+                chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa
+                tại nhà hàng của chúng tôi!
+              </p>
+              <div class="btn_menu">
+                <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
+              </div>
+            </ul>
+          </div>
+          <!-- slide2 -->
+          <div class="bg-header fade bg3">
+            <!-- <img src="./images/bg3.png" alt=""> -->
+            <ul class="menu-container">
+              <h5>Authenic Dishes</h5>
+              <p>
+                Chúng tôi chào đón bạn đến với bữa tiệc ngon miệng gồm những món
+                ăn tinh tế tại Crunchos. Với một loạt các món ăn thế giới để lựa
+                chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa
+                tại nhà hàng của chúng tôi!
+              </p>
+              <div class="btn_menu">
+                <a id="viewmenu" href="./Menu.html">VIEW OUR MENU</a>
+              </div>
+            </ul>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div id="Containerpanel" class="show">
+          <div id="Khungpanel">
+            <div class="Headerpanel">
+              <a class="containeritem" href="./index.html"
+                ><span class="item">Home</span></a
+              >
+              <a class="containeritem" href="./Menu.html"
+                ><span class="item">Menu</span></a
+              >
+              <a class="containeritem" href="./Gallery.html"
+                ><span class="item">Gallery</span></a
+              >
+              <a class="containeritem" href="./About.html"
+                ><span class="item">About</span></a
+              >
+              <a class="containeritem" href="./Contact.html"
+                ><span class="item">Contact</span></a
+              >
+              <a class="containeritem" href="./Booking.html"
+                ><span class="item">Booking</span></a
+              >
             </div>
-        </section>
+          </div>
+          <button id="btn_close" onclick="closePanel()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
     </header>
     <main>
-        <!-- audio -->
-        <audio controls autoplay preload="auto">
-            <source src="./audio/Hello-Viet-Nam.mp3" type="audio/mpeg">
-        </audio>
-        <!-- Welcome -->
-        <section class="Welcome">
-            <h3 class="Welcom_tittle">Bringing class to cuisine</h3>
-            <h2 class="Welcom_tittle2">Welcome To Come&Eat</h2>
-            <p>Chúng tôi chào mừng bạn đến với bữa tiệc ngon miệng gồm những món ăn tinh tế ở Cunchos. Với một loạt các món ăn thế giới để lựa chọn, chúng tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của chúng tôi! Tại đây bạn sẽ hòa mình vào một bầu không khí thân thiện và lãng mạn và thưởng thức các món ăn cao cấp của chúng tôi. Với sự lựa chọn tuyệt vời của chúng tôi về các món ăn từ khắp nơi trên thế giới, bạn có thể cảm thấy mình là một du khách và một người sành ăn thực sự!</p>
-        </section>
+      <!-- audio -->
+      <audio controls autoplay hidden preload="auto">
+        <source src="./audio/Hello-Viet-Nam.mp3" type="audio/mpeg" />
+      </audio>
+      <!-- Welcome -->
+      <section class="Welcome">
+        <h3 class="Welcom_tittle">Bringing class to cuisine</h3>
+        <h2 class="Welcom_tittle2">Welcome To Come&Eat</h2>
+        <p>
+          Chúng tôi chào mừng bạn đến với bữa tiệc ngon miệng gồm những món ăn
+          tinh tế ở Cunchos. Với một loạt các món ăn thế giới để lựa chọn, chúng
+          tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của
+          chúng tôi! Tại đây bạn sẽ hòa mình vào một bầu không khí thân thiện và
+          lãng mạn và thưởng thức các món ăn cao cấp của chúng tôi. Với sự lựa
+          chọn tuyệt vời của chúng tôi về các món ăn từ khắp nơi trên thế giới,
+          bạn có thể cảm thấy mình là một du khách và một người sành ăn thực sự!
+        </p>
+      </section>
 
-       
-
-        <!-- Book A table -->
-        <Section class="Book_A_Table">
-            <div class="Bg_Book">
-                <div class="Menu_Book">
-                    <div class="tittle">
-                        <h2>Bringing class to cuisine</h2>
-                    </div>
-                    <span class="title2">Book A Table</span>
-                    <p>Hãy đặt bàn đề nhận được sự phục vụ hàng đầu thế giới tới từ chúng tôi nha!</p>
-                    <div class="btn_menu">
-                        <a id="viewmenu" href="./Booking.html" target="_blank">BOOK A TABLE</a>
-                    </div>
-                </div>   
+      <!-- Book A table -->
+      <section class="Book_A_Table">
+        <div class="Bg_Book">
+          <div class="Menu_Book">
+            <div class="tittle">
+              <h2>Bringing class to cuisine</h2>
             </div>
-        </section>
-        <!-- Welcome -->
-        <section class="Welcome">
-            <h3 class="Welcom_tittle">Bringing class to cuisine</h3>
-            <h2 class="Welcom_tittle2">BEST SELLER</h2>
-            <p>Với sự kết hợp của hương vị tinh tế, mùi hương thanh thoát, đa dạng phong phú, cùng không gian hiện đại sang trọng, Crunchos tạo ra bản hòa âm của những giác quan, một điểm đến hoàn hảo cho các buổi tiệc và các sự kiện giao lưu quan trọng.</p>
-        </section>
-         <!-- Menu -->
-         <section class="Menu box-responsive">
-            <div id="goout" class="khung">
-                <div id="list_template" class="Menu_colum box-item1"></div>
-                <div id="list_template2" class="Menu_colum box-item1"></div>
-             </div>
-        </section>
-
-        <!-- Our Main Meals -->
-        <section class="Welcome">
-            <h2 class="Welcom_tittle2">Our Main Meals</h2>
-        </section>
-
-        <!-- Menu -->
-         <section class="Menu box-responsive">
-            <div id="goout1" class="khung">
-                <div id="list_template3" class="Menu_colum box-item1"></div>
-                <div id="list_template4" class="Menu_colum box-item1"></div>
-             </div>
-        </section>
-
-        <!-- What people say -->
-        <Section class="Peoplesay">
-            <div class="Bg_Peoplesay">
-                <div class="Container_say">
-                    <div class="tittle">
-                        <h2>Bringing class to cuisine</h2>
-                    </div>
-                    <span class="title2">What People Say</span>
-                    <p>Tinh thần, thái độ của anh chị em nhân viên nhà hàng hết sức nhiệt tình, rất tốt và chu đáo, ba anh đồng sáng lập cũng hết sức tận tình với khách hàng. Thức ăn đảm bảo an toàn thực phẩm, các món ăn ngon và đầy đặn, hình thức trang trí cũng rất đẹp.</p>
-                </div>
-                
-                <!-- slideshow2 -->
-                <div class="slideshow2">
-                    <!-- per1 -->
-                    <div class="sl_show per">
-                        <img src="./images/per1.png" alt="">
-                        <p>Tôi yêu ẩm thực, không khí và dịch vụ của bạn! Một sự kết hợp của tất cả các yếu tố này là hoàn hảo ở đây. Tôi đã đến thăm nhà hàng với bạn bè và tôi đã rất ngạc nhiên bởi nội thất và thực đơn phong phú của nó! Cảm ơn vì công việc tuyệt vời của bạn!</p>
-                        <span class="Name">Mary Scott</span>
-                        <span class="Post">Tourist customers</span>
-                    </div>
-                    <!-- per2 -->
-                    <div class="sl_show per">
-                        <img src="./images/per2.png" alt="">
-                        <p>Bầu không khí hoàn toàn tuyệt đẹp và nhân viên thân thiện! Tôi ngạc nhiên với vị trí thực đơn và hương vị bữa ăn của bạn! Cảm ơn bạn vì thái độ chuyên nghiệp đối với công việc và sự chú ý của bạn đến từng chi tiết! Nhà hàng hoàn hảo! Tôi và gia đình tôi chắc chắn sẽ đến thăm bạn một lần nữa.</p>
-                        <span class="Name">Debby Girr</span>
-                        <span class="Post">Tourist customers</span>
-                    </div>
-                    <!-- per3 -->
-                    <div class="sl_show per">
-                        <img src="./images/per3.png" alt="">
-                        <p>Tôi mới đến thành phố và tôi được bạn bè giới thiệu đến thăm đất nước của bạn. Tôi rất biết ơn về khuyến nghị này! Ẩm thực tuyệt vời, dịch vụ nhanh chóng và nội thất cực kỳ phong cách - đó là tất cả những gì tôi yêu thích ở các nhà hàng! Tôi đánh giá cao sự phục vụ của bạn và đội ngũ nhân viên chuyên nghiệp của bạn.</p>
-                        <span class="Name">Thomas Taker</span>
-                        <span class="Post">Tourist customers</span>
-                    </div>
-                    <div class="khungdot">
-                        <span class="dot" onclick="Change(1)"></span> 
-                        <span class="dot" onclick="Change(2)"></span> 
-                        <span class="dot" onclick="Change(3)"></span> 
-                      </div>
-                </div>  
-
+            <span class="title2">Book A Table</span>
+            <p>
+              Hãy đặt bàn đề nhận được sự phục vụ hàng đầu thế giới tới từ chúng
+              tôi nha!
+            </p>
+            <div class="btn_menu">
+              <a id="viewmenu" href="./Booking.html" target="_blank"
+                >BOOK A TABLE</a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- Welcome -->
+      <section class="Welcome">
+        <h3 class="Welcom_tittle">Bringing class to cuisine</h3>
+        <h2 class="Welcom_tittle2">BEST SELLER</h2>
+        <p>
+          Với sự kết hợp của hương vị tinh tế, mùi hương thanh thoát, đa dạng
+          phong phú, cùng không gian hiện đại sang trọng, Crunchos tạo ra bản
+          hòa âm của những giác quan, một điểm đến hoàn hảo cho các buổi tiệc và
+          các sự kiện giao lưu quan trọng.
+        </p>
+      </section>
+      <!-- Menu -->
+      <section class="Menu box-responsive">
+        <div id="goout" class="khung">
+          <div id="list_template" class="Menu_colum box-item1"></div>
+          <div id="list_template2" class="Menu_colum box-item1"></div>
+        </div>
+      </section>
 
-        <!-- Our Desserts -->
-        <!-- <section class="Welcome">
+      <!-- Our Main Meals -->
+      <section class="Welcome">
+        <h2 class="Welcom_tittle2">Our Main Meals</h2>
+      </section>
+
+      <!-- Menu -->
+      <section class="Menu box-responsive">
+        <div id="goout1" class="khung">
+          <div id="list_template3" class="Menu_colum box-item1"></div>
+          <div id="list_template4" class="Menu_colum box-item1"></div>
+        </div>
+      </section>
+
+      <!-- What people say -->
+      <section class="Peoplesay">
+        <div class="Bg_Peoplesay">
+          <div class="Container_say">
+            <div class="tittle">
+              <h2>Bringing class to cuisine</h2>
+            </div>
+            <span class="title2">What People Say</span>
+            <p>
+              Tinh thần, thái độ của anh chị em nhân viên nhà hàng hết sức nhiệt
+              tình, rất tốt và chu đáo, ba anh đồng sáng lập cũng hết sức tận
+              tình với khách hàng. Thức ăn đảm bảo an toàn thực phẩm, các món ăn
+              ngon và đầy đặn, hình thức trang trí cũng rất đẹp.
+            </p>
+          </div>
+
+          <!-- slideshow2 -->
+          <div class="slideshow2">
+            <!-- per1 -->
+            <div class="sl_show per">
+              <img src="./images/per1.png" alt="" />
+              <p>
+                Tôi yêu ẩm thực, không khí và dịch vụ của bạn! Một sự kết hợp
+                của tất cả các yếu tố này là hoàn hảo ở đây. Tôi đã đến thăm nhà
+                hàng với bạn bè và tôi đã rất ngạc nhiên bởi nội thất và thực
+                đơn phong phú của nó! Cảm ơn vì công việc tuyệt vời của bạn!
+              </p>
+              <span class="Name">Mary Scott</span>
+              <span class="Post">Tourist customers</span>
+            </div>
+            <!-- per2 -->
+            <div class="sl_show per">
+              <img src="./images/per2.png" alt="" />
+              <p>
+                Bầu không khí hoàn toàn tuyệt đẹp và nhân viên thân thiện! Tôi
+                ngạc nhiên với vị trí thực đơn và hương vị bữa ăn của bạn! Cảm
+                ơn bạn vì thái độ chuyên nghiệp đối với công việc và sự chú ý
+                của bạn đến từng chi tiết! Nhà hàng hoàn hảo! Tôi và gia đình
+                tôi chắc chắn sẽ đến thăm bạn một lần nữa.
+              </p>
+              <span class="Name">Debby Girr</span>
+              <span class="Post">Tourist customers</span>
+            </div>
+            <!-- per3 -->
+            <div class="sl_show per">
+              <img src="./images/per3.png" alt="" />
+              <p>
+                Tôi mới đến thành phố và tôi được bạn bè giới thiệu đến thăm đất
+                nước của bạn. Tôi rất biết ơn về khuyến nghị này! Ẩm thực tuyệt
+                vời, dịch vụ nhanh chóng và nội thất cực kỳ phong cách - đó là
+                tất cả những gì tôi yêu thích ở các nhà hàng! Tôi đánh giá cao
+                sự phục vụ của bạn và đội ngũ nhân viên chuyên nghiệp của bạn.
+              </p>
+              <span class="Name">Thomas Taker</span>
+              <span class="Post">Tourist customers</span>
+            </div>
+            <div class="khungdot">
+              <span class="dot" onclick="Change(1)"></span>
+              <span class="dot" onclick="Change(2)"></span>
+              <span class="dot" onclick="Change(3)"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Desserts -->
+      <!-- <section class="Welcome">
             <h3 class="Welcom_tittle">Bringing class to cuisine</h3>
             <h2 class="Welcom_tittle2">Our Desserts</h2>
             <p>We welcome you to a delicious feast of exquisite dishes in Artichaut. With a wide range of world cuisines to choose from, we guarantee you a sumptuous feast experience in our restaurant!  Here you will dive into a friendly and romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from all over the world you can feel yourself as a traveler and true gourmet!</p>
         </section> -->
-        
-        <!-- Menu -->
-        <!-- <section class="Menu box-responsive">
+
+      <!-- Menu -->
+      <!-- <section class="Menu box-responsive">
             <div id="goout2" class="khung">
                 <div id="list_template5" class="Menu_colum box-item1"></div>
                 <div id="list_template6" class="Menu_colum box-item1"></div>
              </div>
         </section> -->
 
-        <!-- Map -->
-        </div>
-        <div id="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.588035353429!2d106.69702801458897!3d10.76619899232849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f15485e6187%3A0xd0c74ec498b1209!2sQuince%20Saigon!5e0!3m2!1sen!2s!4v1670342110107!5m2!1sen!2s" 
-                 width="100%"
-                 height="400px"
-                style="border: 0; margin-bottom: -6px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
+      <!-- Map -->
+      <div id="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.588035353429!2d106.69702801458897!3d10.76619899232849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f15485e6187%3A0xd0c74ec498b1209!2sQuince%20Saigon!5e0!3m2!1sen!2s!4v1670342110107!5m2!1sen!2s"
+          width="100%"
+          height="400px"
+          style="border: 0; margin-bottom: -6px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </main>
 
     <!---------FOOTER---------->
     <section class="footer-container">
-        <div class="footer-content">
-          <div class="footer-item">
-            <div class="footer-title">Address</div>
-            <div class="footer-item-content">
-              The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
-              89GR.
-            </div>
-          </div>
-          <div class="footer-item">
-            <div class="footer-title">Follow us</div>
-            <div class="footer-item-content" id="icon-box">
-              <a href="https://www.facebook.com" target="_blank"
-                ><i class="fa fa-facebook"></i
-              ></a>
-              <a href="https://www.twitter.com" target="_blank"
-                ><i class="fa fa-twitter"></i
-              ></a>
-              <a href="https://www.google.com" target="_blank"
-                ><i class="fa fa-google-plus"></i
-              ></a>
-              <a href="https://www.linkedin.com" target="_blank"
-                ><i class="fa fa-linkedin"></i
-              ></a>
-              <a href="https://www.pinterest.com" target="_blank"
-                ><i class="fa fa-pinterest"></i
-              ></a>
-            </div>
-          </div>
-          <div class="footer-item">
-            <div class="footer-title">Contact us</div>
-            <div class="footer-item-content">
-              <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
-              <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
-              <a href="mailto:mail@demolink.org">mail@demolink.org</a>
-            </div>
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            The Company Name Inc. <br />8901 Marmora Road, <br />Glasgow, D04
+            89GR.
           </div>
         </div>
-      </section>
-      <div class="copyright">
-        <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
       </div>
-      <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-      </button>    
-    </body>
-    <div id="loading">
-        <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
-      </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-    <script src="./assets/JS/base.js"></script>
-    <script src="./assets/JS/main.js"></script>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <button class="audio-btn" id="audio-mute-btn" style="display:block" onclick="toogleMute()">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+    </button>
+    <button class="audio-btn" id="audio-unmute-btn" style="display:none" onclick="toogleUnmute()">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="./assets/JS/base.js"></script>
+  <script src="./assets/JS/main.js"></script>
 </html>

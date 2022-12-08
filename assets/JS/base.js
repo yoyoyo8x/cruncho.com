@@ -43,14 +43,37 @@ function hideMenu() {
 }
 
 // LOADING
-var loadAjax = document.getElementById("loading")
-window.addEventListener("load", function(){
+var loadAjax = document.getElementById("loading");
+window.addEventListener("load", function () {
   // loadAjax.classList.add("blur");
-  setTimeout(
-      function (){
-          loadAjax.classList.add("fade-in")
-          loadAjax.style.display = "none";
-      },
-     500
-  )
+  setTimeout(function () {
+    loadAjax.classList.add("fade-in");
+    loadAjax.style.display = "none";
+  }, 500);
 });
+
+// TOOGLE MUTE
+let volume = document.querySelector("audio");
+let mute = document.getElementById("audio-mute-btn");
+let unmute = document.getElementById("audio-unmute-btn");
+function toogleMute() {
+  console.log(volume.muted);
+  if (volume.muted === true) {
+    volume.muted = false;
+  } else {
+    volume.muted = true;
+  }
+}
+function toogleUnmute() {
+  if (volume.muted === false) {
+    volume.muted = true;
+  }
+}
+
+// if (volume.muted = true) {
+//   mute.style.display = none;
+//   unmute.style.display = block;
+// } else {
+//   mute.style.display = block;
+//   unmute.style.display = none;
+// }
