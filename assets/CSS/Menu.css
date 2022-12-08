@@ -69,9 +69,9 @@
 
 .container_menu_nav li.active,
 .container_menu_nav li:hover {
-    color: black
+    color: black;
+    transition: all 1s ease;
 }
-
 .container_menu_nav p {
     width: 100%;
     padding: 10px 16px;
@@ -138,6 +138,7 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
+    margin-bottom: 40px;
   }
   .col1_Menu_Description{
     width: 100%;

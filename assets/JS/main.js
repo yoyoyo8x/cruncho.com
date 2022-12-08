@@ -93,64 +93,70 @@ function Persay() {
 // ____________________________________________________Menu______________
 let listTemplate = [ 
   {
-    pic: './images/template1.png',
-    name: 'GARLIC SHRIMP & TONNARELLI PASTA',
+    pic: './images/maindishes.png',
+    name: 'Angus tenderloin with lobster',
+    star:'<i class="fa fa-star" aria-hidden="true"></i>',
     link: '#',
-    price: '$19.99',
-    describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic: './images/template2.png',
-    name: 'PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI',
-    link: '#',
-    price: '$15.50',
-    describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic: './images/template3.png',
-    name: 'GRILLED HANGER STEAK',
-    link: '#',
-    price: '$25.50',
-    describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic: './images/template4.png',
-    name: 'GRILLED FREE RANGE CHICKEN SALAD',
-    link: '#',
-    price: '$19.99',
-    describe: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    price: '$40.00',
+    describe: 'Australian Black Beef Tenderloin with Lobster'
 },
 ]
 let listTemplate2 = [ 
 {
-    pic2: './images/template3.png',
-    name2: 'PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI',
+    pic2: './images/maindishes2.png',
+    name2: 'Grilled chicken with vegetables',
+    star:'<i class="fa fa-star" aria-hidden="true"></i>',
     link2: '#',
-    price2: '$15.50',
-    describe2: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic2: './images/template4.png',
-    name2: 'GARLIC SHRIMP & TONNARELLI PASTA',
-    link2: '#',
-    price2: '$19.99',
-    describe2: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic2: './images/template1.png',
-    name2: 'GRILLED FREE RANGE CHICKEN SALAD',
-    link2: '#',
-    price2: '$19.99',
-    describe2: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
-},
-{
-    pic2: './images/template2.png',
-    name2: 'GRILLED HANGER STEAK',
-    link2: '#',
-    price2: '$25.50',
-    describe2: 'Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce'
+    price2: '$30.00',
+    describe2: 'Marinade, chicken, vegetables'
 },
 ];
+let listTemplate3 = [ 
+    {
+      pic: './images/maindishes.png',
+      name: 'Angus tenderloin with lobster',
+      star:'<i class="fa fa-star" aria-hidden="true"></i>',
+      link: '#',
+      price: '$40.00',
+      describe: 'Australian Black Beef Tenderloin with Lobster'
+  },
+  {
+      pic: './images/template4.png',
+      name: 'KUNG PAO CHICKEN',
+      star:'',
+      link: '#',
+      price: '$25.00',
+      describe: 'Peppers, chicken, peanuts'
+  },
+  {
+    pic: './images/plateofhoisin.png',
+    name: 'STICKY HOISION PORK TACOS',
+    link: '#',
+    star:'',
+    price: '$25.00',
+    describe:'Pork, seasonal vegetables, eggs',
+},
+
+  ]
+  let listTemplate4 = [ 
+  {
+      pic2: './images/maindishes2.png',
+      name2: 'Grilled chicken with vegetables',
+      star:'<i class="fa fa-star" aria-hidden="true"></i>',
+      link2: '#',
+      price2: '$30.00',
+      describe2: 'Marinade, chicken, vegetables'
+  },
+  {
+      pic2: './images/plateofbeef.png',
+      name2: 'BEEF STEAK',
+      link2: '#',
+      star:'',
+      price2: '$25.00',
+      describe2: 'Beef steak, potato, tomato'
+  },
+  
+  ];
  // /_______________________________________
 
 function rendertemplate() {
@@ -163,7 +169,7 @@ listTemplate.forEach((i) => {
             <div><img src="${i.pic}" alt="${i.name}"></div>
             <div>
             <div class='Container_price'>
-                <h5>${i.name}</h5>
+                <h5>${i.star} ${i.name}</h5>
                 <h5>${i.price}</h5>
             </div>
             <p>${i.describe}</p>
@@ -185,11 +191,11 @@ listTemplate2.forEach((u) => {
         <div class='Container_template'>
             <div><img src="${u.pic2}" alt="${u.name2}"></div>
             <div>
-            <div class='Container_price'>
-                <h5>${u.name2}</h5>
+                <div class='Container_price'>
+                <h5>${u.star} ${u.name2}</h5>
                 <h5>${u.price2}</h5>
-            </div>
-            <p>${u.describe2}</p>
+                 </div>
+                <p>${u.describe2}</p>
             </div>
         </div>
     `
@@ -204,13 +210,13 @@ function rendertemplate3() {
   const listTem3 = document.getElementById('list_template3');
   let eleTem3 = '';
   
-  listTemplate.forEach((i) => {
+  listTemplate3.forEach((i) => {
       eleTem3 = eleTem3 + `
           <div class='Container_template'>
               <div><img src="${i.pic}" alt="${i.name}"></div>
-              <div>
+              <div class='information'>
               <div class='Container_price'>
-                  <h5>${i.name}</h5>
+                  <h5>${i.star} ${i.name}</h5>
                   <h5>${i.price}</h5>
               </div>
               <p>${i.describe}</p>
@@ -227,13 +233,13 @@ function rendertemplate3() {
   const listTem4 = document.getElementById('list_template4');
   let eleTem4 = '';
   
-  listTemplate2.forEach((u) => {
+  listTemplate4.forEach((u) => {
       eleTem4 = eleTem4 + `
           <div class='Container_template'>
               <div><img src="${u.pic2}" alt="${u.name2}"></div>
-              <div>
+              <div class='information'>
               <div class='Container_price'>
-                  <h5>${u.name2}</h5>
+                  <h5>${u.star} ${u.name2}</h5>
                   <h5>${u.price2}</h5>
               </div>
               <p>${u.describe2}</p>
@@ -248,70 +254,73 @@ function rendertemplate3() {
   // /_______________________________________
 
 
-  function rendertemplate5() {
-  const listTem5 = document.getElementById('list_template5');
-  let eleTem5 = '';
+//   function rendertemplate5() {
+//   const listTem5 = document.getElementById('list_template5');
+//   let eleTem5 = '';
   
-  listTemplate.forEach((i) => {
-      eleTem5 = eleTem5 + `
-          <div class='Container_template'>
-              <div><img src="${i.pic}" alt="${i.name}"></div>
-              <div>
-              <div class='Container_price'>
-                  <h5>${i.name}</h5>
-                  <h5>${i.price}</h5>
-              </div>
-              <p>${i.describe}</p>
-              </div>
-          </div>
-      `
-  })
-  if(listTem5)
-      listTem5.insertAdjacentHTML('beforeend', eleTem5);
-  }
-  rendertemplate5();
+//   listTemplate.forEach((i) => {
+//       eleTem5 = eleTem5 + `
+//           <div class='Container_template'>
+//               <div><img src="${i.pic}" alt="${i.name}"></div>
+//               <div>
+//               <div class='Container_price'>
+//                   <h5>${i.name}</h5>
+//                   <h5>${i.price}</h5>
+//               </div>
+//               <p>${i.describe}</p>
+//               </div>
+//           </div>
+//       `
+//   })
+//   if(listTem5)
+//       listTem5.insertAdjacentHTML('beforeend', eleTem5);
+//   }
+//   rendertemplate5();
   
-  function rendertemplate6() {
-  const listTem6 = document.getElementById('list_template6');
-  let eleTem6 = '';
+//   function rendertemplate6() {
+//   const listTem6 = document.getElementById('list_template6');
+//   let eleTem6 = '';
   
-  listTemplate2.forEach((u) => {
-      eleTem6 = eleTem6 + `
-          <div class='Container_template'>
-              <div><img src="${u.pic2}" alt="${u.name2}"></div>
-              <div>
-              <div class='Container_price'>
-                  <h5>${u.name2}</h5>
-                  <h5>${u.price2}</h5>
-              </div>
-              <p>${u.describe2}</p>
-              </div>
-          </div>
-      `
-  })
-  if(listTem6)
-      listTem6.insertAdjacentHTML('beforeend', eleTem6);
-  }
-  rendertemplate6();
+//   listTemplate2.forEach((u) => {
+//       eleTem6 = eleTem6 + `
+//           <div class='Container_template'>
+//               <div><img src="${u.pic2}" alt="${u.name2}"></div>
+//               <div>
+//               <div class='Container_price'>
+//                   <h5>${u.name2}</h5>
+//                   <h5>${u.price2}</h5>
+//               </div>
+//               <p>${u.describe2}</p>
+//               </div>
+//           </div>
+//       `
+//   })
+//   if(listTem6)
+//       listTem6.insertAdjacentHTML('beforeend', eleTem6);
+//   }
+//   rendertemplate6();
    // /_______________________________________
 
   //  ____________________________________________________ScrollMagic____________
 
   var controller = new ScrollMagic.Controller();
   var ourScene = new ScrollMagic.Scene({
-      triggerElement: '#goout'
+      triggerElement: '#goout',
+      reverse: false
   })
   .setClassToggle('#goout','fadeInLeft')
   .addTo(controller);
 
   var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#goout1'
+    triggerElement: '#goout1',
+    reverse: false
   })
   .setClassToggle('#goout1','fadeInLeft')
   .addTo(controller);
+  
 
-  var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#goout2'
-  })
-  .setClassToggle('#goout2','fadeInLeft')
-  .addTo(controller); 
+//   var ourScene = new ScrollMagic.Scene({
+//     triggerElement: '#goout2'
+//   })
+//   .setClassToggle('#goout2','fadeInLeft')
+//   .addTo(controller); 

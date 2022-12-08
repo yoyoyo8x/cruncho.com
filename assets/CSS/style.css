@@ -13,6 +13,7 @@
   --textbutton: #333333;
   --textmenu: #7b7e81;
   --textfooter: #97999b;
+  --bggbody:#eee;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   text-align: left;
   color: var(--body);
   margin: 0;
-  background-color: var(--bgbody);
+  background-color: var(--bggbody);
   /* padding: 36px 36px 36px 36px; */
   overflow-x: hidden ;
 }
@@ -256,7 +257,7 @@ left: 10%
   flex-wrap: nowrap;
   position: relative;
   align-items: center;
-  padding: 100px 0px 35px 0px;
+  padding: 35px 0px 35px 0px;
   width: 100%;
   max-width: 930px;
   margin: auto;
@@ -270,6 +271,8 @@ left: 10%
   font-style: normal;
   text-decoration: none;
   letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .Welcome h2 {
   color: var(--bgheader);
@@ -297,13 +300,16 @@ left: 10%
   margin-right: auto;
   max-width: 930px;
   width: 100%;
-  padding: 35px 0px 100px 100px;
+  padding: 10px 0px 10px 100px;
   display: flex;
+}
+.fa{
+  margin-right: 10px;
 }
 .khung{
   display: flex;
   opacity: 0.5;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
   transform:translate3d(-100%,0,0);
 } 
 .khung.fadeInLeft{
@@ -351,7 +357,6 @@ left: 10%
 }
 .Menu_colum .Container_template {
   display: flex;
-  justify-content: center;
   margin-top: 29px;
   width: 100%;
   cursor: pointer;
@@ -360,7 +365,9 @@ left: 10%
   filter: grayscale(0);
   transform: scale(1.05)
 }
-
+.information{
+  width: 100%;
+}
 .Container_price {
   display: flex;
   width: 100%;
@@ -375,7 +382,7 @@ left: 10%
   letter-spacing: 0px;
   color: var(--bgheader);
   align-self: flex-start;
-  margin: 20px 20px 20px 0;
+  margin: 20px 5px 20px 0;
 }
 .Container_template p {
   font-family: "Open Sans", Sans-serif;
@@ -434,6 +441,10 @@ left: 10%
 }
 
 /* People Say */
+.Peoplesay{
+  margin-top: 40px;
+  margin-bottom: 1px;
+}
 .Bg_Peoplesay {
   width: 100%;
   max-width: 930px;

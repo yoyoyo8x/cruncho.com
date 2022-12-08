@@ -63,7 +63,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Eggs, espresso, cacao, honey',
  },
  {
-     pic: './images/Menu-img/Food2.png',
+     pic: './images/Menu-img/Beefsteak.jpg',
      name: 'BEEF STEAK',
      link: '#',
      cate: 'MAIN DISHES',
@@ -79,6 +79,14 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
      describe:'Pork, seasonal vegetables, eggs, bread',
  },
  {
+    pic: './images/Menu-img/Hoisin.png',
+    name: 'STICKY HOISION PORK TACOSASIAN HOISIN PORK',
+    link: '#',
+    cate: 'MAIN DISHES',
+    price: '$25.00',
+    describe:'Pork, seasonal vegetables, eggs',
+},
+ {
      pic: './images/Menu-img/Food5.png',
      name: 'KUNG PAO CHICKEN',
      cate: 'MAIN DISHES',
@@ -91,7 +99,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
     name: 'Angus tenderloin with lobster',
     cate: 'MAIN DISHES',
     link: '#',
-    price: '$25.00',
+    price: '$40.00',
     describe:'Australian Black Beef Tenderloin with Lobster',
 },
 {
@@ -99,7 +107,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
     name: 'Grilled chicken with vegetables',
     cate: 'MAIN DISHES',
     link: '#',
-    price: '$25.00',
+    price: '$30.00',
     describe:'Marinade, chicken, vegetables ',
 },
  {
@@ -234,7 +242,7 @@ let listItems = [
         describe: 'Marinade, chicken, vegetables'
     },
     {
-        name: 'Beff steak',
+        name: 'Beef steak',
         link: '#',
         star:'',
         cate: 'Title',
