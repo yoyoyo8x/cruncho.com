@@ -8,13 +8,14 @@ var dateRequired = document.getElementById("date-required");
 var timeRequired = document.getElementById("time-required");
 var peopleRequired = document.getElementById("people-required");
 var peopleInvalid = document.getElementById("people-invalid");
+let popup = document.getElementById("popup-booking");
 
-document.booking.addEventListener("submit", function (event) {
-  event.preventDefault();
+document.booking.addEventListener("formdata", function () {
+  popup.style.display="flex";
 });
 
-function store() {
-  // event.preventDefault();
+function store(event) {
+  event.preventDefault();
   var firstName = document.getElementById("first-n").value;
   var secondName = document.getElementById("second-n").value;
   var email = document.getElementById("email").value;
@@ -24,7 +25,9 @@ function store() {
   var time = document.getElementById("time").value;
   var note = document.getElementById("note").value;
   validEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
-  validPhone = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+  validPhone = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/
+  console.log(validPhone.test(phone));
+
 
   const info = {
     firstName: firstName,
@@ -68,7 +71,7 @@ function store() {
     dateRequired.style.display = "none";
   }
 
-  if (phone === "" || phone === null) {
+  if (phone === "") {
     phoneRequired.style.display = "block";
     phoneInvalid.style.display = "none";
   }
