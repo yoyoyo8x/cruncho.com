@@ -136,7 +136,7 @@ scale:0.9;
 }
 
 .item:hover{
-  filter: brightness(50%);
+  scale:1.05;
   transition: all 1s;
 }
 
