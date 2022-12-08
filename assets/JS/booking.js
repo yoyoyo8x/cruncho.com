@@ -9,13 +9,28 @@ var timeRequired = document.getElementById("time-required");
 var peopleRequired = document.getElementById("people-required");
 var peopleInvalid = document.getElementById("people-invalid");
 let popup = document.getElementById("popup-booking");
+let popupConfirm = document.getElementById("popup-confirm-content");
 
-document.booking.addEventListener("formdata", function () {
-  popup.style.display="flex";
-});
-
-function store(event) {
+function popupS(event){
   event.preventDefault();
+  setTimeout(function(){
+    popup.style.display = "flex";
+    popup.classList.add("fade-in")
+  },350) 
+}
+
+booking.addEventListener("submit", popupS);
+
+function closePopup(){
+  popup.classList.add("fade-out");
+  setTimeout(function(){
+    popup.style.display = "none";
+  },350)
+}
+
+
+function store() {
+  // event.preventDefault();
   var firstName = document.getElementById("first-n").value;
   var secondName = document.getElementById("second-n").value;
   var email = document.getElementById("email").value;
@@ -25,9 +40,8 @@ function store(event) {
   var time = document.getElementById("time").value;
   var note = document.getElementById("note").value;
   validEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
-  validPhone = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/
+  validPhone = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
   console.log(validPhone.test(phone));
-
 
   const info = {
     firstName: firstName,
@@ -120,6 +134,11 @@ function store(event) {
   localStorage.setItem("bookingInfo", JSON.stringify(info));
   const bookingInfo = localStorage.getItem("bookingInfo");
   console.log(bookingInfo);
+  dataInfo = JSON.parse(localStorage.getItem("bookingInfo"));
+  userName = dataInfo.secondName;
+  userTime = dataInfo.time;
+  userDate = dataInfo.date;
+  popupConfirm.innerHTML="Dear Mr/Mrs "+userName+". Thank you for your booking. <br> Please arrive at "+userTime+" "+userDate+" to have the best experience.";
 }
 
 document.getElementById("submit-btn").onclick = store;
