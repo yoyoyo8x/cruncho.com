@@ -11,23 +11,24 @@ var peopleInvalid = document.getElementById("people-invalid");
 let popup = document.getElementById("popup-booking");
 let popupConfirm = document.getElementById("popup-confirm-content");
 
-function popupS(event){
+function popupS(event) {
   event.preventDefault();
-  setTimeout(function(){
+  setTimeout(function () {
     popup.style.display = "flex";
-    popup.classList.add("fade-in")
-  },350) 
+    popup.classList.add("fade-in");
+    popup.classList.remove("fade-out");
+  }, 350);
 }
 
 booking.addEventListener("submit", popupS);
 
-function closePopup(){
+function closePopup() {
   popup.classList.add("fade-out");
-  setTimeout(function(){
+  popup.classList.remove("fade-in");
+  setTimeout(function () {
     popup.style.display = "none";
-  },350)
+  }, 350);
 }
-
 
 function store() {
   // event.preventDefault();
@@ -138,7 +139,14 @@ function store() {
   userName = dataInfo.secondName;
   userTime = dataInfo.time;
   userDate = dataInfo.date;
-  popupConfirm.innerHTML="Dear Mr/Mrs "+userName+". Thank you for your booking. <br> Please arrive at "+userTime+" "+userDate+" to have the best experience.";
+  popupConfirm.innerHTML =
+    "Dear Mr/Mrs " +
+    userName +
+    ", thank you for your booking. <br> Please arrive at " +
+    userTime +
+    " " +
+    userDate +
+    " to have the best experience.";
 }
 
 document.getElementById("submit-btn").onclick = store;
