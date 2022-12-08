@@ -46,10 +46,10 @@ function hideMenu() {
 var loadAjax = document.getElementById("loading");
 window.addEventListener("load", function () {
   // loadAjax.classList.add("blur");
-  setTimeout(function () {
+
     loadAjax.classList.add("fade-in");
     loadAjax.style.display = "none";
-  }, 500);
+
 });
 
 // TOOGLE MUTE
