@@ -155,7 +155,14 @@ let listTemplate3 = [
       price2: '$25.00',
       describe2: 'Beef steak, potato, tomato'
   },
-  
+  {
+    pic2: './images/plateofpizza.png',
+    name2: 'Pizza',
+    link2: '#',
+    star:'',
+    price2: '$25.00',
+    describe2: 'Sausage, flour, tomato'
+  },
   ];
  // /_______________________________________
 
@@ -324,3 +331,69 @@ function rendertemplate3() {
 //   })
 //   .setClassToggle('#goout2','fadeInLeft')
 //   .addTo(controller); 
+let listspace = [ 
+  {
+    pic: './images/space/1.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Overview/1.jpg',
+  },
+  {
+    pic: './images/space/2.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Overview/2.jpg',
+  },
+  {
+    pic: './images/space/3.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Overview/4.jpg',
+  },
+  {
+    pic: './images/space/4.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/1.jpg',
+  },
+  {
+    pic: './images/space/5.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/2.jpg',
+  },
+  {
+    pic: './images/space/6.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/3.jpg',
+  },
+  {
+    pic: './images/space/7.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/4.jpg',
+  },
+  {
+    pic: './images/space/8.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/5.jpg',
+  },
+  {
+    pic: './images/space/9.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/6.jpg',
+  },
+  
+  {
+    pic: './images/space/11.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Bar/1.jpg',
+  },
+  {
+    pic: './images/space/10.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Restaurant/14.jpg',
+  },
+  {
+    pic: './images/space/12.jpg',
+    link: 'https://solariahotel.com/UploadFile/Gallery/Bar/3.jpg',
+  },
+  ];
+  function renderspace() {
+    const listSpace = document.getElementById('list_space');
+    let elespace = '';
+    
+    listspace.forEach((i) => {
+        elespace = elespace + `
+                <a href="${i.link}" target="_blank">
+                  <img src="${i.pic}">
+                </a>
+        `
+    })
+    if(listSpace)
+        listSpace.insertAdjacentHTML('beforeend', elespace);
+    }
+    renderspace();

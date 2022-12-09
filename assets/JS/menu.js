@@ -86,6 +86,14 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
     price: '$25.00',
     describe:'Pork, seasonal vegetables, eggs',
 },
+{
+    pic: './images/Menu-img/Pizza.png',
+    name: 'PIZZA',
+    link: '#',
+    cate: 'MAIN DISHES',
+    price: '$25.00',
+    describe:'Sausage, flour, tomato',
+},
  {
      pic: './images/Menu-img/Food5.png',
      name: 'KUNG PAO CHICKEN',
@@ -264,6 +272,14 @@ let listItems = [
         cate: 'Title',
         price: '$25.00',
         describe: 'Peppers, chicken, peanuts'
+    },
+    {
+        name: 'Pizza',
+        link: '#',
+        star:'',
+        cate: 'Title',
+        price: '$25.00',
+        describe: 'Sausage, flour, tomato'
     },
 ];
 function renderList() {

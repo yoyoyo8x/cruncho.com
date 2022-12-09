@@ -26,7 +26,7 @@ body {
   text-align: left;
   color: var(--body);
   margin: 0;
-  background-color: var(--bggbody);
+  background-color: var(--bgbody);
   /* padding: 36px 36px 36px 36px; */
   overflow-x: hidden ;
 }
@@ -257,15 +257,15 @@ left: 10%
   flex-wrap: nowrap;
   position: relative;
   align-items: center;
-  padding: 35px 0px 35px 0px;
+  padding: 40px 0px 40px 0px;
   width: 100%;
   max-width: 930px;
   margin: auto;
 }
 .Welcome h3 {
   color: var(--bgheader);
-  font-family: "Open Sans", Sans-serif;
-  font-size: 15px;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   font-style: normal;
@@ -285,10 +285,10 @@ left: 10%
 .Welcome p {
   color: #7b7e81;
   font-family: "Open Sans", Sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  margin-top: 0;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -300,10 +300,10 @@ left: 10%
   margin-right: auto;
   max-width: 930px;
   width: 100%;
-  padding: 10px 0px 10px 100px;
+  padding: 10px 0px 10px 70px;
   display: flex;
 }
-.fa{
+.Container_price .fa{
   margin-right: 10px;
 }
 .khung{
@@ -442,8 +442,7 @@ left: 10%
 
 /* People Say */
 .Peoplesay{
-  margin-top: 40px;
-  margin-bottom: 1px;
+  margin-top: 50px;
 }
 .Bg_Peoplesay {
   width: 100%;
@@ -660,3 +659,18 @@ left: 10%
   z-index: 100;
 }
 
+/* ____space____ */
+.Container_space_content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.Container_space_content a{
+  width: 31.8%;
+  flex-direction: column;
+  padding: 9px;
+}
+.Container_space_content img{
+  width: 100%;
+}

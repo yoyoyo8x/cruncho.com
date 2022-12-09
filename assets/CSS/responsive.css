@@ -20,7 +20,7 @@
         padding: 10px 10px 10px 10px;
     }
     .slideshow .menu-container{
-        top: 5%;
+        top: 15%;
     }
     .slideshow p{
         padding: 0px 45px;
@@ -28,7 +28,7 @@
     }
     .Menu {
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     .Menu_colum{
         padding: 0px 10px 0px 10px;
@@ -56,6 +56,7 @@
     }
     .slideshow2 p {
         width: auto;
+        margin: 0 30px;
     }
     #viewmenu{
         font-size: 12px;
@@ -76,6 +77,22 @@
         top: 93.5%;
         height: 25px;
    }
+   .Welcome p{
+        margin: 20px 30px 0px 30px;
+   }
+   .Welcome h2{
+        margin: 20px 0px;
+   }
+   .Menu_Book p{
+        margin: 0 10px 1em;
+   }
+   .Container_space_content a{
+        width: 100%;
+        padding: 0px;
+   }
+   .Container_say p{
+   margin: 0 34px 1em;
+   }
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
@@ -92,11 +109,12 @@
         margin: 30px 0px 94px 0px;
     }
     .Welcome h2{
-        margin: 0 0 40px 0;
+        margin: 0 0 10px 0;
         font-size: 55px;
     }
     .Welcome p{
-        font-size: 22px;
+        font-size: 16px;
+        margin: 20px 40px;
     }
     .Menu {
         padding: 0;
@@ -140,6 +158,22 @@
     }
     audio{
         top: 76%;
+   }
+   .Container_space_content a{
+    width: 47%;
+    padding: 8px;
+   }
+   .khung.fadeInLeft {
+    margin: 0 40px;
+   }
+   .Container_say p{
+    margin: 0 40px;
+   }
+   .slideshow2 p{
+    margin: 0 40px;
+   }
+   .slideshow p{
+    margin: 0px 60px;
    }
 
 }
