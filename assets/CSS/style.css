@@ -122,6 +122,7 @@ body {
   max-width: 100%;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 .bg-header.bg1 {
   display: auto;
