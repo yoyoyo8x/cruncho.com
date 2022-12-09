@@ -41,8 +41,8 @@ body {
   object-fit: cover;
 }
 
-.menubar-pc a:last-child,
-.menubar-mobile a:last-child {
+.menubar-pc a:nth-child(4),
+.menubar-mobile a:nth-child(5) {
   color: #f84747;
 }
 

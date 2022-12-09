@@ -78,8 +78,8 @@ a {
   left: 0;
 }
 
-.menubar-pc a:nth-child(4),
-.menubar-mobile a:nth-child(5) {
+.menubar-pc a:nth-child(5),
+.menubar-mobile a:nth-child(6) {
   color: #f84747;
 }
 

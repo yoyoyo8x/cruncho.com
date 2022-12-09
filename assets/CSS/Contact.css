@@ -39,8 +39,8 @@ body {
   color: var(--bgbody);
 }
 
-.menubar-pc a:nth-child(5),
-.menubar-mobile a:nth-child(6) {
+.menubar-pc a:last-child,
+.menubar-mobile a:last-child {
   color: #f84747;
 }
 
