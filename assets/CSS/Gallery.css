@@ -83,7 +83,7 @@
 
 .filter-items {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 388px);
   gap: 20px;
   justify-content: center;
   align-content: center;
@@ -92,7 +92,7 @@
 }
 
 .filter-items img {
-  width: 350px;
+  width: 388px;
   height: 350px;
 }
 

@@ -22,9 +22,6 @@ filterContainer.addEventListener("click", (event) => {
   }
 });
 
-window.onload = function () {
-  document.getElementById("appe").click();
-};
 
 // Modal
 var modal = document.getElementById("modal-filer");
