@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 :root {
   --body: #7f7d8e;
   --bgbody: #fff;
@@ -219,13 +218,13 @@ body {
 .popup-close {
   border: none;
   padding: 10px 50px;
-  font-family: "Noto Serif", serif;
+  font-family: 'Merriweather', serif;
   background-color: #0035ffb5;
   border-radius: 10%;
   color: white;
   cursor: pointer;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   box-shadow: 1px 1px 5px #4a3abe;
   margin-bottom: 10px;
   margin-top: 5px;
