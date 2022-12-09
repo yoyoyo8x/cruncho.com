@@ -260,6 +260,14 @@ let listItems = [
         describe: 'Beef steak, potato, tomato'
     },
     {
+      name: 'STICKY HOISION PORK TACOSASIAN HOISIN PORK',
+      link: '#',
+      star:'<i class="fa fa-star" aria-hidden="true"></i>',
+      cate: 'Title',
+      price: '$25.00',
+      describe: 'Pork, seasonal vegetables, eggs'
+    },
+    {
         name: 'Asian hoisin pork',
         link: '#',
         star:'',
@@ -278,7 +286,7 @@ let listItems = [
     {
         name: 'Pizza',
         link: '#',
-        star:'',
+        star:'<i class="fa fa-star" aria-hidden="true"></i>',
         cate: 'Title',
         price: '$25.00',
         describe: 'Sausage, flour, tomato'

@@ -364,6 +364,7 @@ audio {
 .Menu_colum .Container_template:hover {
   filter: grayscale(0);
   transform: scale(1.05);
+  transition: 1s ease-out;
 }
 .information {
   width: 100%;

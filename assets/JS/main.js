@@ -107,6 +107,14 @@ let listTemplate = [
     price: "$40.00",
     describe: "Australian Black Beef Tenderloin with Lobster",
   },
+  {
+    pic: "./images/plateofhoisin.png",
+    name: "STICKY HOISION PORK TACOS",
+    star: '<i class="fa fa-star" aria-hidden="true"></i>',
+    link: "#",
+    price: "$25.00",
+    describe: "Pork, seasonal vegetables, eggs",
+  },
 ];
 let listTemplate2 = [
   {
@@ -116,6 +124,14 @@ let listTemplate2 = [
     link2: "#",
     price2: "$30.00",
     describe2: "Marinade, chicken, vegetables",
+  },
+  {
+    pic2: './images/plateofpizza.png',
+    name2: 'Pizza',
+    link2: '#',
+    star:'<i class="fa fa-star" aria-hidden="true"></i>',
+    price2: '$25.00',
+    describe2: 'Sausage, flour, tomato'
   },
 ];
 let listTemplate3 = [
@@ -139,7 +155,7 @@ let listTemplate3 = [
     pic: "./images/plateofhoisin.png",
     name: "STICKY HOISION PORK TACOS",
     link: "#",
-    star: "",
+    star: '<i class="fa fa-star" aria-hidden="true"></i>',
     price: "$25.00",
     describe: "Pork, seasonal vegetables, eggs",
   },
@@ -165,7 +181,7 @@ let listTemplate4 = [
     pic2: './images/plateofpizza.png',
     name2: 'Pizza',
     link2: '#',
-    star:'',
+    star:'<i class="fa fa-star" aria-hidden="true"></i>',
     price2: '$25.00',
     describe2: 'Sausage, flour, tomato'
   },
