@@ -366,10 +366,14 @@
       <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
     <button class="audio-btn" id="audio-mute-btn" style="display:block" onclick="toogleMute()">
-        <i class="fa fa-volume-up" aria-hidden="true"></i>
+        <div class="audio-icon">
+          <img src="./images/audio.png" alt="">
+        </div>
     </button>
-    <button class="audio-btn" id="audio-unmute-btn" style="display:none" onclick="toogleUnmute()">
-        <i class="fa fa-volume-off" aria-hidden="true"></i>
+    <button class="audio-btn" id="audio-unmute-btn" style="display:none" onclick="toogleMute()">
+      <div class="audio-icon">
+        <img src="./images/mute-audio.png" alt="">
+      </div>
     </button>
   </body>
   <div id="loading">

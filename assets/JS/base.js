@@ -52,26 +52,17 @@ window.addEventListener("load", function () {
 
 // TOOGLE MUTE
 let volume = document.querySelector("audio");
-let mute = document.getElementById("audio-mute-btn");
-let unmute = document.getElementById("audio-unmute-btn");
 function toogleMute() {
+  let mute = document.getElementById("audio-mute-btn");
+  let unmute = document.getElementById("audio-unmute-btn");
   console.log(volume.muted);
   if (volume.muted === true) {
     volume.muted = false;
+    mute.style.display = "block";
+    unmute.style.display = "none";
   } else {
     volume.muted = true;
+    mute.style.display = "none";
+    unmute.style.display = "block";
   }
 }
-function toogleUnmute() {
-  if (volume.muted === false) {
-    volume.muted = true;
-  }
-}
-
-// if (volume.muted = true) {
-//   mute.style.display = none;
-//   unmute.style.display = block;
-// } else {
-//   mute.style.display = block;
-//   unmute.style.display = none;
-// }

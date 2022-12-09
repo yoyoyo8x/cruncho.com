@@ -624,17 +624,17 @@ audio {
 .audio-btn {
   display: block;
   position: fixed;
-  padding: 5px;
+  padding: 3px;
   border: none;
-  bottom: 20px;
-  left: 10px;
+  bottom: 11px;
+  left: 3px;
   background-color: var(--text);
   opacity: 0.6;
   border-radius: 80%;
+  scale: 0.75;
 }
-.audio-btn i {
-  font-size: 30px;
-  margin-right: 0;
+.audio-icon {
+  scale:0.6;
 }
 
 /* ------LOADING------ */
