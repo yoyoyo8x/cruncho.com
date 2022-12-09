@@ -2,7 +2,7 @@
 const filterContainer = document.querySelector(".filter");
 const galleryItems = document.querySelectorAll(".item");
 
-filterContainer.addEventListener("click", (event) =>{
+filterContainer.addEventListener("click", (event) => {
   if (event.target.classList.contains("btn")) {
     filterContainer.querySelector(".active").classList.remove("active");
 
@@ -11,7 +11,7 @@ filterContainer.addEventListener("click", (event) =>{
     const filterValue = event.target.getAttribute("data-filter");
 
     galleryItems.forEach((item) => {
-      if (item.classList.contains(filterValue) ) {
+      if (item.classList.contains(filterValue)) {
         item.classList.remove("hide");
         item.classList.add("show");
       } else {
@@ -22,10 +22,9 @@ filterContainer.addEventListener("click", (event) =>{
   }
 });
 
-window.onload = function(){
+window.onload = function () {
   document.getElementById("appe").click();
-}
+};
 
 // Modal
 var modal = document.getElementById("modal-filer");
-

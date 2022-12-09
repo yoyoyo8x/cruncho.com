@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif&display=swap");
 
 :root {
   --body: #7f7d8e;
@@ -188,7 +188,7 @@ body {
   align-items: center;
   flex-direction: column;
   max-width: 800px;
-  padding:15px 20px;
+  padding: 15px 20px;
   background-color: #fff;
   border-radius: 20px;
   text-align: center;
@@ -197,7 +197,7 @@ body {
 .popup-title {
   color: #2eef2e;
   font-family: Arial;
-  font-size:30px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 7px 0;
@@ -205,7 +205,7 @@ body {
 
 #popup-confirm-content {
   color: #25292d;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 22px;
   line-height: 45px;
   padding-bottom: 10px;
@@ -218,7 +218,7 @@ body {
 .popup-close {
   border: none;
   padding: 10px 50px;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   background-color: #0035ffb5;
   border-radius: 10%;
   color: white;
@@ -230,10 +230,10 @@ body {
   margin-top: 10px;
 }
 
-.popup-close:hover{
-  scale:1.02;
+.popup-close:hover {
+  scale: 1.02;
 }
 
-.popup-close:focus{
-  scale:0.95;
+.popup-close:focus {
+  scale: 0.95;
 }

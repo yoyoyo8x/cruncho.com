@@ -13,7 +13,7 @@
   --textbutton: #333333;
   --textmenu: #7b7e81;
   --textfooter: #97999b;
-  --bggbody:#eee;
+  --bggbody: #eee;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   margin: 0;
   background-color: var(--bggbody);
   /* padding: 36px 36px 36px 36px; */
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 /* CSS header*/
 .header-container {
@@ -242,12 +242,12 @@ body {
 }
 /*________________________________________________ */
 /* audio */
-audio{
-position: absolute;
-top: 78%;
-width: 80%;
-height: 50px;
-left: 10%
+audio {
+  position: absolute;
+  top: 78%;
+  width: 80%;
+  height: 50px;
+  left: 10%;
 }
 
 /* main welcome */
@@ -303,18 +303,18 @@ left: 10%
   padding: 10px 0px 10px 100px;
   display: flex;
 }
-.fa{
+.fa {
   margin-right: 10px;
 }
-.khung{
+.khung {
   display: flex;
   opacity: 0;
   transition: all 1s ease-out;
-  transform:translate3d(-100%,0,0);
-} 
-.khung.fadeInLeft{
+  transform: translate3d(-100%, 0, 0);
+}
+.khung.fadeInLeft {
   opacity: 1;
-  transform:translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 /* .khung1{
   display: flex;
@@ -363,9 +363,9 @@ left: 10%
 }
 .Menu_colum .Container_template:hover {
   filter: grayscale(0);
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
-.information{
+.information {
   width: 100%;
 }
 .Container_price {
@@ -441,7 +441,7 @@ left: 10%
 }
 
 /* People Say */
-.Peoplesay{
+.Peoplesay {
   margin-top: 40px;
   margin-bottom: 1px;
 }
@@ -620,7 +620,7 @@ left: 10%
   margin-right: 0;
 }
 
-.audio-btn{
+.audio-btn {
   display: block;
   position: fixed;
   padding: 5px;
@@ -631,7 +631,7 @@ left: 10%
   opacity: 0.6;
   border-radius: 80%;
 }
-.audio-btn i{
+.audio-btn i {
   font-size: 30px;
   margin-right: 0;
 }
@@ -659,4 +659,3 @@ left: 10%
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-

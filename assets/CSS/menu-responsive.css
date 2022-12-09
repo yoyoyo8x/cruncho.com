@@ -19,20 +19,20 @@
     width: 100%;
     overflow: hidden;
   }
-  .container_menu_nav{
+  .container_menu_nav {
     flex-wrap: wrap;
   }
-  .container_menu_content{
+  .container_menu_content {
     padding: 0;
   }
-  .container_menu_content .Food{
+  .container_menu_content .Food {
     width: 100%;
   }
 
-  .Bar_Menu{
+  .Bar_Menu {
     flex-wrap: wrap;
   }
-  .Row_Infor_Menu{
+  .Row_Infor_Menu {
     flex-direction: column;
   }
   .Row_Infor_Menu .Containerfood {
@@ -59,7 +59,7 @@
   /* .item{
     padding-bottom: 15px;
   } */
-  .container_item p{
+  .container_item p {
     font-size: 12px;
   }
 
@@ -94,13 +94,13 @@
   .Menu_Description {
     padding: 0;
   }
-  .col1_Menu_Description{
+  .col1_Menu_Description {
     padding: 10px 10px 10px 10px;
   }
   .col2_Menu_Description .list_item {
     padding: 0;
   }
-  .container_menu_nav{
+  .container_menu_nav {
     flex-wrap: wrap;
   }
 }

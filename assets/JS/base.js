@@ -46,8 +46,8 @@ function hideMenu() {
 var loadAjax = document.getElementById("loading");
 window.addEventListener("load", function () {
   // loadAjax.classList.add("blur");
-    loadAjax.classList.add("fade-in");
-    loadAjax.style.display = "none";
+  loadAjax.classList.add("fade-in");
+  loadAjax.style.display = "none";
 });
 
 // TOOGLE MUTE
