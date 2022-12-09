@@ -41,7 +41,7 @@ body {
 
 .menubar-pc a:nth-child(5),
 .menubar-mobile a:nth-child(6) {
-  color:#f84747;
+  color: #f84747;
 }
 
 /* --------CONTACT-------- */
@@ -164,16 +164,16 @@ body {
   position: relative;
 }
 
-.required{
+.required {
   display: none;
   font-family: Poppins;
   line-height: 1em;
   padding-bottom: 17px;
-  padding-left:10px;
+  padding-left: 10px;
   color: red;
 }
 
-#submit-ajax{
+#submit-ajax {
   position: absolute;
   height: 55px;
   margin-top: 23px;

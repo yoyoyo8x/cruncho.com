@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif&display=swap");
 
 :root {
   --body: #7f7d8e;
@@ -187,22 +188,26 @@ body {
   align-items: center;
   flex-direction: column;
   max-width: 800px;
-  padding: 20px;
+  padding: 15px 20px;
   background-color: #fff;
   border-radius: 20px;
-  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-.popup-content {
-  /* display: flex; */
+.popup-title {
+  color: #2eef2e;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 0;
 }
 
 #popup-confirm-content {
   color: #25292d;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  line-height: 37px;
+  font-family: "Noto Serif", serif;
+  font-size: 22px;
+  line-height: 45px;
   padding-bottom: 10px;
 }
 
@@ -212,21 +217,23 @@ body {
 
 .popup-close {
   border: none;
-  padding: 5px 25px;
-  font-family: "Rubik", Sans-serif;
+  padding: 10px 50px;
+  font-family: "Noto Serif", serif;
   background-color: #0035ffb5;
   border-radius: 10%;
   color: white;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
-  box-shadow: 1px 1px 3px #4a3abe;;
+  box-shadow: 1px 1px 5px #4a3abe;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
-.popup-close:hover{
-  scale:1.02;
+.popup-close:hover {
+  scale: 1.02;
 }
 
-.popup-close:focus{
-  scale:0.95;
+.popup-close:focus {
+  scale: 0.95;
 }

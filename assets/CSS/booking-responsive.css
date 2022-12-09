@@ -50,6 +50,9 @@
     width: 100%;
   }
 
+  .popup-container {
+    margin: 10px;
+  }
   /* --------FOOTER-------- */
   .footer-content {
     grid-template-columns: repeat(1, 1fr);

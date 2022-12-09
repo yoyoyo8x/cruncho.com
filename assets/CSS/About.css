@@ -343,15 +343,15 @@ a {
 .information-list {
   display: flex;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 }
 .information-item img {
   width: 280px;
   height: 330px;
 }
 
-.information-item:hover{
-  background-color:#b8b8b84a;
+.information-item:hover {
+  background-color: #b8b8b84a;
   scale: 1.05;
 }
 
