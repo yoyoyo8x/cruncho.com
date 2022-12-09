@@ -88,7 +88,7 @@ let listMenu = [ //list ra danh sách cái picture và info ở dưới
     describe:'Pork, seasonal vegetables, eggs',
 },
 {
-    pic: './images/Menu-img/pizza.png',
+    pic: './images/Menu-img/pizzaaa.png',
     name: 'PIZZA',
     link: '#',
     cate: 'MAIN DISHES',
