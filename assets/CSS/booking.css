@@ -194,7 +194,7 @@ body {
 }
 
 .popup-title {
-  color: #2eef2e;
+  color: #2c8c2c;
   font-family: Arial;
   font-size: 30px;
   font-weight: 700;
@@ -219,13 +219,13 @@ body {
   border: none;
   padding: 10px 50px;
   font-family: 'Merriweather', serif;
-  background-color: #0035ffb5;
+  background-color: #000;
   border-radius: 10%;
   color: white;
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
-  box-shadow: 1px 1px 5px #4a3abe;
+  box-shadow: 1px 1px 5px #707076;
   margin-bottom: 10px;
   margin-top: 5px;
 }

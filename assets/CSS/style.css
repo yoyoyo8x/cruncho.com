@@ -624,14 +624,14 @@ audio {
 .audio-btn {
   display: block;
   position: fixed;
-  padding: 3px;
+  padding: 2px;
   border: none;
-  bottom: 11px;
+  bottom: 12px;
   left: 3px;
   background-color: var(--text);
   opacity: 0.6;
   border-radius: 80%;
-  scale: 0.75;
+  scale: 0.72;
 }
 .audio-icon {
   scale:0.6;
