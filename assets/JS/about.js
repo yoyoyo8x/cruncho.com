@@ -117,7 +117,7 @@ function animateNumber(
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  animateNumber(5337, 3000, 0, function (number) {
+  animateNumber(12337, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString();
     document.getElementById("happyclient-count").innerText = formattedNumber;
   });
@@ -127,12 +127,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("amazingdish-count").innerText = formattedNumber;
   });
 
-  animateNumber(251, 3500, 0, function (number) {
+  animateNumber(451, 3500, 0, function (number) {
     const formattedNumber = number.toLocaleString();
     document.getElementById("satisfiedstaff-count").innerText = formattedNumber;
   });
 
-  animateNumber(9437, 3000, 0, function (number) {
+  animateNumber(19437, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString();
     document.getElementById("workhour-count").innerText = formattedNumber;
   });
