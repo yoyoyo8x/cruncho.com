@@ -676,3 +676,9 @@ audio {
 .Container_space_content img{
   width: 100%;
 }
+.Container_space_content img:hover{
+  filter: grayscale(0);
+  transform: scale(1.05);
+  transition: 1s ease-out;
+}
+
