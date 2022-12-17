@@ -28,6 +28,9 @@
     flex-direction: column;
   }
 
+  .popup-container{
+    width: 300px;
+  }
   /* --------FOOTER-------- */
   .footer-content {
     grid-template-columns: repeat(1, 1fr);
@@ -54,6 +57,9 @@
   /* --------CONTACT-------- */
   .submit-content {
     flex-direction: column;
+  }
+  .popup-container{
+    width: 45%;
   }
 }
 

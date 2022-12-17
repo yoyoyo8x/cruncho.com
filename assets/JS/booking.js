@@ -9,7 +9,12 @@ var timeRequired = document.getElementById("time-required");
 var peopleRequired = document.getElementById("people-required");
 var peopleInvalid = document.getElementById("people-invalid");
 let popup = document.getElementById("popup-booking");
-let popupConfirm = document.getElementById("popup-confirm-content");
+let popupName = document.getElementById("popup-name");
+let popupPhone = document.getElementById("popup-phone");
+let popupEmail = document.getElementById("popup-email");
+let popupDate = document.getElementById("popup-date");
+let popupTime = document.getElementById("popup-time");
+let popupNumber = document.getElementById("popup-number");
 
 function popupS(event) {
   event.preventDefault();
@@ -136,17 +141,19 @@ function store() {
   const bookingInfo = localStorage.getItem("bookingInfo");
   console.log(bookingInfo);
   dataInfo = JSON.parse(localStorage.getItem("bookingInfo"));
-  userName = dataInfo.secondName;
+  user1Name = dataInfo.firstName;
+  user2Name = dataInfo.secondName;
+  userEmail = dataInfo.email;
+  userPhone = dataInfo.phone;
   userTime = dataInfo.time;
   userDate = dataInfo.date;
-  popupConfirm.innerHTML =
-    "Dear Mr/Mrs " +
-    userName +
-    ", thank you for your booking. <br> Please arrive at " +
-    userTime +
-    " " +
-    userDate +
-    " to have the best experience.";
+  userNumber = dataInfo.peoples;
+  popupName.innerHTML = user1Name + " " + user2Name;
+  popupDate.innerHTML = userDate;
+  popupTime.innerHTML = userTime;
+  popupPhone.innerHTML= userPhone;
+  popupEmail.innerHTML = userEmail;
+  popupNumber.innerHTML = userNumber + " " + "people/person"
 }
 
 document.getElementById("submit-btn").onclick = store;

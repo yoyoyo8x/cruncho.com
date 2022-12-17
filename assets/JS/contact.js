@@ -3,13 +3,33 @@ var secondRequired = document.getElementById("2nd-required");
 var emailRequired = document.getElementById("email-required");
 var emailInvalid = document.getElementById("email-invalid");
 var subAjax = document.getElementById("submit-ajax");
+let popup = document.getElementById("popup-contact");
+
+function popupS(event) {
+  event.preventDefault();
+  setTimeout(function () {
+    popup.style.display = "flex";
+    popup.classList.add("fade-in");
+    popup.classList.remove("fade-out");
+  }, 350);
+}
+
+myForm.addEventListener("submit", popupS);
+
+function closePopup() {
+  popup.classList.add("fade-out");
+  popup.classList.remove("fade-in");
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 350);
+}
 
 document.myForm.addEventListener("submit", function (event) {
   event.preventDefault();
   subAjax.style.visibility = "visible";
   setTimeout(function () {
     subAjax.style.visibility = "hidden";
-  }, 1500);
+  }, 500);
 });
 
 function store() {

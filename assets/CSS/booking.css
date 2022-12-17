@@ -194,12 +194,11 @@ body {
 }
 
 .popup-title {
-  color: #2c8c2c;
+  color: #62bc62;
   font-family: Arial;
   font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 #popup-confirm-content {
@@ -236,4 +235,17 @@ body {
 
 .popup-close:focus {
   scale: 0.95;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.info-title{
+  text-align:left;
+}
+
+.info-content{
+  text-align: right;
 }

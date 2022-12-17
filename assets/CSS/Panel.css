@@ -20,6 +20,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   display: none;
+  backdrop-filter: blur(5px);
 }
 #Khungpanel {
   width: 100%;
