@@ -207,11 +207,11 @@ body {
   background-color: #fff;
   border-radius: 20px;
   text-align: center;
-  width: 35%;
+  width: 30%;
 }
 
 .popup-title {
-  color: #2c8c2c;
+  color: #62bc62;
   font-family: Arial;
   font-size: 30px;
   font-weight: 700;
@@ -220,15 +220,15 @@ body {
 
 #popup-confirm-content {
   color: #25292d;
-  font-family: "Noto Serif", serif;
+  font-family: "Open Sans", serif;
   font-size: 22px;
   line-height: 42px;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 
 .popup-content svg {
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 140px;
+  max-height: 140px;
 }
 
 .popup-close {
