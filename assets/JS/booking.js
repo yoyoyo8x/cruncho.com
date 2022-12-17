@@ -151,9 +151,9 @@ function store() {
   popupName.innerHTML = user1Name + " " + user2Name;
   popupDate.innerHTML = userDate;
   popupTime.innerHTML = userTime;
-  popupPhone.innerHTML= userPhone;
+  popupPhone.innerHTML = userPhone;
   popupEmail.innerHTML = userEmail;
-  popupNumber.innerHTML = userNumber + " " + "people/person"
+  popupNumber.innerHTML = userNumber + " " + "people/person";
 }
 
 document.getElementById("submit-btn").onclick = store;

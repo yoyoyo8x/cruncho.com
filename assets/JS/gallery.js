@@ -22,6 +22,5 @@ filterContainer.addEventListener("click", (event) => {
   }
 });
 
-
 // Modal
 var modal = document.getElementById("modal-filer");

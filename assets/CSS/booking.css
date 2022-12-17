@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 :root {
   --body: #7f7d8e;
   --bgbody: #fff;
@@ -217,7 +217,7 @@ body {
 .popup-close {
   border: none;
   padding: 10px 50px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   background-color: #000;
   border-radius: 10%;
   color: white;
@@ -237,15 +237,15 @@ body {
   scale: 0.95;
 }
 
-.info{
+.info {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.info-title{
-  text-align:left;
+.info-title {
+  text-align: left;
 }
 
-.info-content{
+.info-content {
   text-align: right;
 }
