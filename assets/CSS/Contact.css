@@ -205,7 +205,7 @@ body {
   max-width: 800px;
   padding: 15px 20px;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   width: 35%;
 }
@@ -213,7 +213,7 @@ body {
 .popup-title {
   color: #62bc62;
   font-family: Arial;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   padding-bottom: 5px;
 }
