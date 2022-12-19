@@ -1,5 +1,5 @@
 // Panel
-/* Openpanel*/
+/* Openpanel*/  //Sư dụng phương thức domdoc
 function openPanel() {
   document.getElementById("Containerpanel").style.display = "block";
 }
@@ -14,11 +14,9 @@ function closePanel() {
 
 // AUTOSCROLL
 var autoBtn = document.getElementById("auto-btn");
-
 window.onscroll = function () {
   scrollFunction();
 };
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     autoBtn.style.display = "block";
@@ -34,24 +32,24 @@ function autoScroll() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n) {            //Next/previous 
+  showSlides((slideIndex += n));   // toán tử gán slideindex = slideindex + n
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+// function currentSlide(n) {  // Điều khiển hình ảnh
+//   showSlides((slideIndex = n));
+// }
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("bg-header fade");
-  if (n > slides.length) {
+  let slides = document.getElementsByClassName("bg-header fade");  //Dom đến class 
+  if (n > slides.length) {  //Khi chạy hết slide thì quay về slide ban đầu
     slideIndex = 1;
   }
-  if (n < 1) {
+  if (n < 1) {    // Ban đầu khi control previous thì quay về slide cuối cùng 
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (i = 0; i < slides.length; i++) {   //Sử dụng vòng lặp for để display none cái phần tử còn lại của mảng
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
@@ -94,9 +92,8 @@ function Persay() {
   }
   slides[Move - 1].style.display = "flex";
   dots[Move - 1].className += " active";
-  setTimeout(Persay, 3000); // Change image every 3 seconds
+  setTimeout(Persay, 3000); // Change every 3 seconds
 }
-
 // ____________________________________________________Menu______________
 let listTemplate = [
   {
@@ -284,57 +281,6 @@ function rendertemplate4() {
   if (listTem4) listTem4.insertAdjacentHTML("beforeend", eleTem4);
 }
 rendertemplate4();
-// /_______________________________________
-
-//   function rendertemplate5() {
-//   const listTem5 = document.getElementById('list_template5');
-//   let eleTem5 = '';
-
-//   listTemplate.forEach((i) => {
-//       eleTem5 = eleTem5 + `
-//           <div class='Container_template'>
-//               <div><img src="${i.pic}" alt="${i.name}"></div>
-//               <div>
-//               <div class='Container_price'>
-//                   <h5>${i.name}</h5>
-//                   <h5>${i.price}</h5>
-//               </div>
-//               <p>${i.describe}</p>
-//               </div>
-//           </div>
-//       `
-//   })
-//   if(listTem5)
-//       listTem5.insertAdjacentHTML('beforeend', eleTem5);
-//   }
-//   rendertemplate5();
-
-//   function rendertemplate6() {
-//   const listTem6 = document.getElementById('list_template6');
-//   let eleTem6 = '';
-
-//   listTemplate2.forEach((u) => {
-//       eleTem6 = eleTem6 + `
-//           <div class='Container_template'>
-//               <div><img src="${u.pic2}" alt="${u.name2}"></div>
-//               <div>
-//               <div class='Container_price'>
-//                   <h5>${u.name2}</h5>
-//                   <h5>${u.price2}</h5>
-//               </div>
-//               <p>${u.describe2}</p>
-//               </div>
-//           </div>
-//       `
-//   })
-//   if(listTem6)
-//       listTem6.insertAdjacentHTML('beforeend', eleTem6);
-//   }
-//   rendertemplate6();
-// /_______________________________________
-
-//  ____________________________________________________ScrollMagic____________
-
 var controller = new ScrollMagic.Controller();
 var ourScene = new ScrollMagic.Scene({
   triggerElement: "#goout",
@@ -350,11 +296,6 @@ var ourScene = new ScrollMagic.Scene({
   .setClassToggle("#goout1", "fadeInLeft")
   .addTo(controller);
 
-//   var ourScene = new ScrollMagic.Scene({
-//     triggerElement: '#goout2'
-//   })
-//   .setClassToggle('#goout2','fadeInLeft')
-//   .addTo(controller);
 let listspace = [
   {
     pic: "./images/space/1.jpg",
@@ -392,7 +333,6 @@ let listspace = [
     pic: "./images/space/9.jpg",
     link: "https://solariahotel.com/UploadFile/Gallery/Restaurant/6.jpg",
   },
-
   {
     pic: "./images/space/11.jpg",
     link: "https://solariahotel.com/UploadFile/Gallery/Bar/1.jpg",
