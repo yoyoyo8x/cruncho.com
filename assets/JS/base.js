@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
 
 // TOOGLE MUTE
 var audio = document.getElementById("myaudio");
-  audio.volume = 0.4;
+  audio.volume = 0.7;
 let volume = document.querySelector("audio");
 function toogleMute() {
   let mute = document.getElementById("audio-mute-btn");
