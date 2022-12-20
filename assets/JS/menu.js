@@ -199,7 +199,7 @@ function renderMenubar() {
          </li>
      `;
   });
-  if (menuEle) menuEle.insertAdjacentHTML("beforeend", eleRender);
+  if (menuEle) menuEle.insertAdjacentHTML("beforeend", eleRender);  //Sử dụng phương thức insertAdjacentHTML để chèn các phần từ
 }
 
 renderMenubar();
@@ -314,25 +314,6 @@ function renderList() {
   if (listEle) listEle.insertAdjacentHTML("beforeend", eleRender);
 }
 renderList();
-
-// function renderList1() {
-//     const listEle = document.getElementById('list1');
-//     let eleRender = '';
-//     listItems.forEach((i) => {
-//         eleRender = eleRender + `
-//             <div class='container_item'>
-//                 <div class='item'>
-//                     <h5>${i.name}</h5>
-//                     <h5>${i.price}</h5>
-//                 </div>
-//                 <p>${i.describe}</p>
-//             </div>
-//         `
-//     })
-//     if(listEle)
-//         listEle.insertAdjacentHTML('beforeend', eleRender);
-// }
-// renderList1();
 
 var controller = new ScrollMagic.Controller();
 var ourScene = new ScrollMagic.Scene({
